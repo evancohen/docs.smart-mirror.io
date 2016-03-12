@@ -3,9 +3,7 @@
         "ga",
         "youtube",
         "anchors-wrapper",
-        "customheader",
         "github",
-        "hide-published-with",
         "addcssjs"
     ],
     "pluginsConfig": {
@@ -14,8 +12,12 @@
             "configuration": "auto"
         },
         "addcssjs": {
-          "js": ["docs/lib/custom.js"],
-          "css": ["docs/lib/custom.css"]
+            "js": [
+                "docs/lib/custom.js"
+            ],
+            "css": [
+                "docs/lib/custom.css"
+            ]
         }
     }
 }

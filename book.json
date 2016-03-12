@@ -5,12 +5,17 @@
         "anchors-wrapper",
         "customheader",
         "github",
-        "hide-published-with"
+        "hide-published-with",
+        "addcssjs"
     ],
     "pluginsConfig": {
         "ga": {
             "token": "UA-73330169-1",
             "configuration": "auto"
+        },
+        "addcssjs": {
+          "js": ["docs/lib/custom.js"],
+          "css": ["docs/lib/custom.css"]
         }
     }
 }

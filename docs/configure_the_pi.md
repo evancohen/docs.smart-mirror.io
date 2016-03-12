@@ -32,3 +32,5 @@ Then, edit the file **/home/pi/.config/lxsession/LXDE-pi/autostart**
 and add the following line to the end:
 /`home/pi/smart-start.sh &`
 Reboot the Pi and you should be good to go
+
+Next step: [Install dependencies and run](install_dependencies_and_run.md)

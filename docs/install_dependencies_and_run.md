@@ -9,3 +9,5 @@ This will take a minute, it has to download [electron-prebuilt](https://github.c
 ```
 npm start
 ```
+
+Have an issue? Take a look at the [Troubleshooting Page](troubleshooting.md).

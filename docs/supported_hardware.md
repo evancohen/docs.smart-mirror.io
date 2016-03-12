@@ -20,3 +20,5 @@ The smart-mirror also requires the following:
 And some optional hardware:
 
 - Philips Hue
+
+Next Step: [Installation](installation.md)

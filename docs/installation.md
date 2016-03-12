@@ -1,6 +1,8 @@
 # Installation
 
-In order to get started I suggest a clean install of Raspbian. You can snag a fresh copy of Jessie (recommended, it's the future) or Wheezy from the [Raspbian Download Page](https://www.raspberrypi.org/downloads/raspbian/).
+**This instructions are specific to the Raspberry Pi 2 and 3**
+
+To get started I suggest a clean install of Raspbian. You can snag a fresh copy of Jessie (recommended, it's the future) or Wheezy from the [Raspbian Download Page](https://www.raspberrypi.org/downloads/raspbian/).
 
 You'll also need to install Node (v4.0.0+) which now comes bundled with npm.
 ```
@@ -20,3 +22,4 @@ cd ~
 git clone https://github.com/evancohen/smart-mirror.git
 ```
 
+Next Step: [Configuration](configuration.md)

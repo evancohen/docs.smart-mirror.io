@@ -3,3 +3,7 @@
 * {   
     font-family: 'Open Sans', sans-serif; 
 }
+
+.book .book-body .navigation.navigation-prev, .book .book-body .navigation.navigation-next {
+  display: none;
+}

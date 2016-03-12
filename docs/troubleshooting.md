@@ -1,6 +1,6 @@
 # Troubleshooting
 
-##### Getting your microphone working
+##### Microphone issues
 This is the definitive answer to all of your problems (hopefully). There is no need to mess around with ALSA conf files. All you have to do is run:
 
 ```

@@ -19,6 +19,9 @@
             "css": [
                 "docs/lib/custom.css"
             ]
+        },
+        "github" : {
+            "url" : "https://github.com/evancohen/smart-mirror"
         }
     }
 }

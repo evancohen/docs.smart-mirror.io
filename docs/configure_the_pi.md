@@ -1,14 +1,14 @@
-# Configure The Pi
+# Configure the Pi
 
 ##### Rotate your monitor
-In order to rotate your monitor you'll need to add the following line to `/boot/config.txt`
+To rotate your monitor you'll need to add the following line to `/boot/config.txt`
 ```
 display_rotate=1
 ```
 You can also set this value to '3' to have a flipped vertical orientation.
 
 ##### Disable screensaver
-In order to disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver` and `@lxpanel` lines in `/etc/xdg/lxsession/LXDE/autostart`. You'll also want to add the following lines to that same file
+To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver` and `@lxpanel` lines in `/etc/xdg/lxsession/LXDE/autostart`. You'll also want to add the following lines to that same file
 ```
 @xset s off
 @xset -dpms

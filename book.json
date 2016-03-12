@@ -2,7 +2,6 @@
     "plugins": [
         "ga",
         "youtube",
-        "anchors-wrapper",
         "github",
         "addcssjs",
         "hide-published-with"
@@ -12,6 +11,9 @@
             "token": "UA-73330169-1",
             "configuration": "auto"
         },
+        "github": {
+            "url": "https://github.com/evancohen/smart-mirror"
+        },
         "addcssjs": {
             "js": [
                 "docs/lib/custom.js"
@@ -19,9 +21,6 @@
             "css": [
                 "docs/lib/custom.css"
             ]
-        },
-        "github" : {
-            "url" : "https://github.com/evancohen/smart-mirror"
         }
     }
 }

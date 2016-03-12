@@ -1,1 +1,2 @@
-# smart-mirror.io
+# Introduction
+

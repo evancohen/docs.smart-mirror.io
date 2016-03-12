@@ -22,4 +22,4 @@ cd ~
 git clone https://github.com/evancohen/smart-mirror.git
 ```
 
-Next Step: [Configuration](configuration.md)
+Next Step: [Configure the smart-mirror](configure_the_mirror.md)

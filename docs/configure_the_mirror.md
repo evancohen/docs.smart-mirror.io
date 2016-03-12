@@ -1,4 +1,4 @@
-# Configure the Mirror
+# Configure the smart-mirror
 
 The smart-mirror relies on a configuration file to determine what data to display. 
 
@@ -42,3 +42,5 @@ var config = {
 };
 ```
 Note that if you start the mirror and get a white screen you most likeley have an issue with your config.
+
+Next Step: [Configure the Pi](configure_the_pi.md)

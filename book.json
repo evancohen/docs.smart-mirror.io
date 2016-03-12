@@ -1,7 +1,11 @@
 {
     "plugins": [
         "ga",
-        "youtube"
+        "youtube",
+        "anchors-wrapper",
+        "customheader",
+        "github",
+        "hide-published-with"
     ],
     "pluginsConfig": {
         "ga": {

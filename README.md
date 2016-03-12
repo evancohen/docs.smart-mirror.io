@@ -5,7 +5,9 @@ The smart-mirror was inspired by [HomeMirror](https://github.com/HannahMitt/Home
 The smart-mirror is voice controlled, integrates with a growing number of services, and can control your lights :)
 
 ##### Video Demo: [See it in action](https://youtu.be/PDIbhV8Nvq8)
-{% youtube %}https://www.youtube.com/watch?v=PDIbhV8Nvq8{% endyoutube %}
+{% youtube %}
+https://www.youtube.com/watch?v=PDIbhV8Nvq8
+{% endyoutube %}
 
 Starting from scratch? No problem. Head on over to the [Supported Hardware](docs/supported_hardware.md) section to get started.
 

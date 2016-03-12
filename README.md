@@ -7,6 +7,8 @@ The smart-mirror is voice controlled, integrates with a growing number of servic
 ##### Video Demo: [See it in action](https://youtu.be/PDIbhV8Nvq8)
 [![](youtube-thumb.png)](https://youtu.be/PDIbhV8Nvq8)
 
+{% youtube %}https://www.youtube.com/watch?v=PDIbhV8Nvq8{% endyoutube %}
+
 Starting from scratch? No problem. Head on over to the [Supported Hardware](docs/supported_hardware.md) section to get started.
 
 If you encounter problems along the way check out the [Troubleshooting](docs/troubleshooting.md) section or join us in the [gitter chat](https://gitter.im/evancohen/smart-mirror).

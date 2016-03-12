@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "ga"
+        "ga",
+        "youtube"
     ],
     "pluginsConfig": {
         "ga": {

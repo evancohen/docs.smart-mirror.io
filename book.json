@@ -17,9 +17,6 @@
         "addcssjs": {
             "js": [
                 "docs/lib/custom.js"
-            ],
-            "css": [
-                "docs/lib/custom.css"
             ]
         }
     }

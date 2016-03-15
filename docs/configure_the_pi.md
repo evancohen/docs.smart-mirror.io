@@ -19,8 +19,7 @@ To disable the screensaver you'll want to comment out (with a '#') the `@xscreen
 ```
 sudo apt-get install unclutter
 ```
-Then add `unclutter -idle 0.1 -root` to /etc/xdg/lxsession/LXDE/autostart via
-`nano /etc/xdg/lxsession/LXDE/autostart`. Or into a bash script, like shown below.
+Then add `unclutter -idle 0.1 -root` to /etc/xdg/lxsession/LXDE/autostart via.
  
 ##### Start the mirror on boot
 Optionally, you can configure your Pi to start the mirror on boot

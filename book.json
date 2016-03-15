@@ -4,7 +4,8 @@
         "youtube",
         "github",
         "addcssjs",
-        "hide-published-with"
+        "hide-published-with",
+        "canonical-link"
     ],
     "pluginsConfig": {
         "ga": {
@@ -18,6 +19,9 @@
             "js": [
                 "docs/lib/custom.js"
             ]
+        },
+        "canonical-link": {
+            "canonicalURL": "http://docs.smart-mirror.io"
         }
     }
 }

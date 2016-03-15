@@ -32,9 +32,11 @@ cd /home/pi/smart-mirror && npm start
 ```
 
 Make the file owned by the user pi
-`chown pi:pi /home/pi/smart-start.sh`
-And make it executable
-`chmod +x /home/pi/smart-start.sh`
+```
+chown pi:pi /home/pi/smart-start.sh
+chmod +x /home/pi/smart-start.sh
+```
+
 Then, edit the file **/home/pi/.config/lxsession/LXDE-pi/autostart**
 and add the following line to the end:
 /`home/pi/smart-start.sh &`

@@ -18,9 +18,6 @@
             "js": [
                 "docs/lib/custom.js"
             ]
-        },
-        "fontSettings": {
-            "theme": 'night'
         }
     }
 }

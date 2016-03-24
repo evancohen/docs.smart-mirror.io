@@ -1,5 +1,12 @@
 # Configure the Pi
 
+##### Expand root partition
+When you first install Raspbian onto an SD card it doesn't use all the disk space. To reclaim that space run:
+```
+sudo raspi-config
+```
+And then choose "Expand root partition to fill SD card" option.
+
 ##### Rotate your monitor
 To rotate your monitor you'll need to add the following line to `/boot/config.txt`
 ```

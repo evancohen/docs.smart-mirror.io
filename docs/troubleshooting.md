@@ -16,7 +16,7 @@ Or, to get sound over HDMI:
 sudo modprobe snd_bcm2835
 sudo amixer cset numid=3 0
 ```
-A reboot may be required after this.
+A reboot is required after this.
 
 ##### Mirror won't start
 The mirror can not be started via `npm start` over ssh, however you can run the "run on boot" script to start the mirror remotely.

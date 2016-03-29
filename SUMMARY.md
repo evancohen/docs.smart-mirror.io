@@ -10,4 +10,5 @@
 * [Troubleshooting](docs/troubleshooting.md)
 * [Development and Contributing](docs/development_and_contributing.md)
 * [Index](SUMMARY.md)
+* [Updating](docs/updating.md)
 

@@ -14,6 +14,7 @@ npm update
 npm install
 ```
 
+There may also have been a breaking change in the format of `config.js`, which means you'll either have to fill it out again or make sure that it matches the format of `config.example.js`.
 
 #### Still having problems?
 

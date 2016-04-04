@@ -14,4 +14,4 @@ GOOGLE_DEFAULT_CLIENT_ID=your_client_id
 GOOGLE_DEFAULT_CLIENT_SECRET=your_client_secret
 ```
 
-To test that these values were set you can use `printenv` to display all environmental variables on your Pi. If your keys do not appear you may need to reboot your device.
+To test that these values were set you can use `printenv` to display all environmental variables on your Pi. If your keys do not appear you may need to reboot.

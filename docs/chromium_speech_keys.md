@@ -1,7 +1,7 @@
 # Chromium Speech Keys
 ### [This is optional]
 
-Because of the high volume smart mirrors being created we have cumulatively been using the Google Speech speech quota for `electron-prebuilt`.
+Because of the high volume smart mirrors being created we have cumulatively been using the Google Speech quota for `electron-prebuilt`.
 
 To solve this problem, we recommend using your own chromium API keys (giving you your own query quota). To get your own keys you'll need to follow the instructions for [Acquiring Keys](https://www.chromium.org/developers/how-tos/api-keys) in the  Chromium developer documentation.
 

@@ -9,9 +9,9 @@ Once you have your `GOOGLE_API_KEY`, `GOOGLE_DEFAULT_CLIENT_ID` and `GOOGLE_DEFA
 
 ```
 # Chromium API Keys
-GOOGLE_API_KEY=your_api_key
-GOOGLE_DEFAULT_CLIENT_ID=your_client_id
-GOOGLE_DEFAULT_CLIENT_SECRET=your_client_secret
+export GOOGLE_API_KEY=your_api_key
+export GOOGLE_DEFAULT_CLIENT_ID=your_client_id
+export GOOGLE_DEFAULT_CLIENT_SECRET=your_client_secret
 ```
 
 To test that these values were set you can use `printenv` to display all environmental variables on your Pi. If your keys do not appear you may need to reboot.

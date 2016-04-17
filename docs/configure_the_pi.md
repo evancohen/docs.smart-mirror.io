@@ -15,7 +15,7 @@ display_rotate=1
 You can also set this value to '3' to have a flipped vertical orientation.
 
 ##### Disable screensaver
-To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver` and `@lxpanel` lines in `/etc/xdg/lxsession/LXDE/autostart`. You'll also want to add the following lines to that same file
+To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver` and `@lxpanel` lines in `/etc/xdg/lxsession/LXDE-pi/autostart`. You'll also want to add the following lines to that same file
 ```
 @xset s off
 @xset -dpms
@@ -26,7 +26,7 @@ To disable the screensaver you'll want to comment out (with a '#') the `@xscreen
 ```
 sudo apt-get install unclutter
 ```
-Then add `unclutter -idle 0.1 -root` to `/etc/xdg/lxsession/LXDE/autostart`.
+Then add `unclutter -idle 0.1 -root` to `/etc/xdg/lxsession/LXDE-pi/autostart`.
  
 ##### Start the mirror on boot
 Optionally, you can configure your Pi to start the mirror on boot

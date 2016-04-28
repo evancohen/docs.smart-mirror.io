@@ -5,11 +5,11 @@
 To get started I suggest a clean install of Raspbian. You can snag a fresh copy of Jessie (recommended, it's the future) or Wheezy from the [Raspbian Download Page](https://www.raspberrypi.org/downloads/raspbian/).
 Make sure to download the **Full desktop image**. 
 
-You'll also need to install Node (v4.0.0+) which now comes bundled with npm.
+You'll also need to install Node (v4.4.3+) which now comes bundled with npm.
 ```
-wget https://nodejs.org/dist/v4.0.0/node-v4.0.0-linux-armv7l.tar.gz 
-tar -xvf node-v4.0.0-linux-armv7l.tar.gz 
-cd node-v4.0.0-linux-armv7l
+wget https://nodejs.org/dist/v4.4.3/node-v4.4.3-linux-armv7l.tar.gz 
+tar -xvf node-v4.4.3-linux-armv7l.tar.gz 
+cd node-v4.4.3-linux-armv7l
 ```
 Copy to /usr/local
 ```

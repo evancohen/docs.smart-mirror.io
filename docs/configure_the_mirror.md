@@ -10,19 +10,19 @@ cp config.example.js config.js
 Then fill out `config.js`. See below for links to get service keys and example values for config properties.
 
 #### Index
-- [Language](#Language)
+- [Language](#language)
 - [Speech](#speech)
 - [Layout](#layout)
-- Greeting
-- Forcast
-- Geolocation
-- Hue
-- Calendar
-- Giphy
-- YouTube
-- SoundCloud
-- Traffic
-- Fitbit
+- [Greeting](#greeting)
+- [Forecast](#forecast)
+- [Geolocation](#geolocation)
+- [Hue](#hue)
+- [Calendar](#calendar)
+- [Giphy](#giphy)
+- [YouTube](#youtube)
+- [SoundCloud](#soundcloud)
+- [Traffic](#traffic)
+- [Fitbit](https://github.com/evancohen/smart-mirror/blob/master/Fitbit-README.md)
 
 
 ### Language

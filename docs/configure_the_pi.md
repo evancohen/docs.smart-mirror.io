@@ -49,4 +49,7 @@ and add the following line to the end:
 `/home/pi/smart-start.sh &`
 Reboot the Pi and you should be good to go
 
+##### [Optional] DLNA (Chromecast and Sonos)
+The [troubleshooting steps](troubleshooting.md) suggest setting up PulseAudio to solve audio input problems. If you are looking for streaming support the [pulseaudio-dlna](https://github.com/masmu/pulseaudio-dlna) client will do all the heavy lifting for you. 
+
 Next step: [Install dependencies and run](install_dependencies_and_run.md)

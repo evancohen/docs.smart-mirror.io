@@ -9,3 +9,15 @@
 .book .book-body .navigation.navigation-prev, .book .book-body .navigation.navigation-next {
   display: none;
 }
+
+#book-search-input {
+    background: rgba(255,255,255,.1);
+}
+
+ul.summary > li:first-child {
+    display: none;
+}
+
+li.divider {
+    display: none;
+}

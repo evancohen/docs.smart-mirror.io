@@ -26,12 +26,14 @@ Then fill out `config.js`. See below for links to get service keys and example v
 
 
 ### Language
-The following languages are currently supported:
- - `"en"` - English
- - `"de"` - German
- - `"es"` - Spanish
- - `"fr"` - French
- - `"ko"` - Korean
+The following languages are fully supported:
+ - `"en-US"` - English
+ - `"de-DE"` - German
+ - `"es-ES"` - Spanish
+ - `"fr-FR"` - French
+ - `"ko-KO"` - Korean
+
+Specific locals can also be specified, for instance `"es-AR"` or `"es-BO"`. For more details about supported speech detection languages see this [stack**overflow**](http://stackoverflow.com/questions/14257598/what-are-language-codes-for-voice-recognition-languages-in-chromes-implementati/14302134#14302134) post.
 
 ### Speech
 It's highly recommended that you train the keyword spotter with your own voice. This will be most accurate if you do this on your Pi using the microphone that you'll be using to trigger the mirror.

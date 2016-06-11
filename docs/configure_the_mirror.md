@@ -9,6 +9,7 @@ cp config.example.js config.js
 
 Then fill out `config.js`. See below for links to get service keys and example values for config properties.
 
+It is **highly recommended** that you [train your own keyword](#speech).
 #### Index
 - [Language](#language)
 - [Speech](#speech)
@@ -33,14 +34,22 @@ The following languages are fully supported:
  - `"fr-FR"` - French
  - `"ko-KO"` - Korean
 
-Specific locals can also be specified, for instance `"es-AR"` or `"es-BO"`. For more details about supported speech detection languages see this [stack**overflow**](http://stackoverflow.com/questions/14257598/what-are-language-codes-for-voice-recognition-languages-in-chromes-implementati/14302134#14302134) post.
+Specific locals can also be specified, for instance `"es-AR"` or `"es-BO"`. For more details about supported speech detection languages see this [Stack**Overflow**](http://stackoverflow.com/questions/14257598/what-are-language-codes-for-voice-recognition-languages-in-chromes-implementati/14302134#14302134) post.
 
 ### Speech
-It's highly recommended that you train the keyword spotter with your own voice. This will be most accurate if you do this on your Pi using the microphone that you'll be using to trigger the mirror.
+Training your own keyword will drastically increase the accuracy of keyword detection. This will be most accurate if you do this on your Pi using the microphone that you'll be using to trigger the mirror.
 
-You can train your own model here: https://snowboy.kitt.ai/hotword/47 
+**You can train your own model here**: https://snowboy.kitt.ai/hotword/47 
 
 Once trained, download the model and save it to the root of the smart-mirror directory.
+
+The speech config object has the following properties:
+- `keyword` - The text of the keyword that you are using to trigger the mirror. This should be "Smart Mirror"
+- `model` - The filename for your model (should not include spaces)
+- `sensitivity` - Sensitivity for the keyword spotter. If you are getting too many false positives or are having trouble detecting you can change this value.
+- `continuous` - After detecting a keyword:
+ -  `false`: listen to a single utterance (recommended)
+ -  `true`: listen until silence is detected (will use lots of speech requests)
 
 ### Layout
 You can set these values to be `"main"` (recommended) or `"icesnow"`.

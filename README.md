@@ -15,7 +15,7 @@ Starting from scratch? No problem. Head on over to the [Hardware](docs/hardware.
 
 If you encounter problems along the way check out the [Troubleshooting](docs/troubleshooting.md) section or join us in the [gitter chat](https://gitter.im/evancohen/smart-mirror).
 
-Please file issues and bugs [on GitHub](https://github.com/evancohen/smart-mirror/issues/new).
+Please file any issues or bugs [on GitHub](https://github.com/evancohen/smart-mirror/issues/new).
 
 ### Supported Platforms
 

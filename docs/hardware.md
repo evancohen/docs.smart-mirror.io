@@ -41,11 +41,11 @@ First, remove the single screw on the back of the monitor. Then, pop off the bez
 
 Next, cover the exposed display frame with black electrical tape. The monitor will now be able to sit flush with the mirror.
 
-![Masking the monitor edges.](20160702-0657-life.JPG)
+![](monitor-masked-close.jpg)
 
 The monitor, ready for installation in the cabinet:
 
-![](20160702-0655-life.JPG)
+![](monitor-masked.jpg)
 
 ### Preparing the cabinet
 First, disassemble the door of the medicine cabinet, removing the mirror from the frame. The staples holding the frame together can be pulled out with needle-nose pliers. 

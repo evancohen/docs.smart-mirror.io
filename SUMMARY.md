@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Supported Hardware](docs/supported_hardware.md)
+* [Hardware](docs/hardware.md)
 * [Installation](docs/installation.md)
 * [Configuration](docs/configuration.md)
    * [Configure the smart-mirror](docs/configure_the_mirror.md)

@@ -79,7 +79,7 @@ The final assembly, in profile:
 
 ### Mounting (Optional)
 
-Due to the somewhat heavy weight of the final assembly, I had wood cleats cut at my local hardward store, allowing me to anchor the mirror securely to the wall.
+Due to the somewhat heavy weight of the final assembly, I had wood cleats cut at my local hardware store, allowing me to anchor the mirror securely to the wall.
 
 ![](cleats.jpg)
 

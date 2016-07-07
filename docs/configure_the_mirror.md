@@ -24,6 +24,7 @@ It is **highly recommended** that you [train your own keyword](#speech).
 - [SoundCloud](#soundcloud)
 - [Traffic](#traffic)
 - [Fitbit](https://github.com/evancohen/smart-mirror/blob/master/Fitbit-README.md)
+- [Motion](#motion)
 
 
 ### Language
@@ -201,8 +202,38 @@ traffic: {
 }
 ```
 
-
 If any of your trips aren't showing up it's likeley because Bing Maps can't find the address you specified. Using a full postal address should fix this issue.
+
+### Motion
+Add motion detection to the mirror to turn it on and off. This requires a motion sensor.
+
+|Variable | Usage | Data Type | Default|
+| --|--|--|--|
+| `pin` | Identify GPIO input Pin connected to output pin of the PIR device or other device used to detect motion | int | 26|
+| `screentimeout` | Amount of time in minutes before HDMI is turned off after last detected motion | float | 5.0|
+| `enable` | enable motion detection | boolean | false|
+| `debug` | enable debugging (not implemented) | boolean | true|
+
+#### Sample usage
+In your `config.js` file:
+``` javascript
+motion : {
+    pin : 26,
+    screentimeout : 5.0,
+    enable : true,
+    debug : true
+},
+```
+
+#### PIR device used in testing
+
+[EMY 5 X HC-SR501](https://smile.amazon.com/gp/product/B00FDPO9B8) - Adjust Ir Pyroelectric Infrared PIR Motion Sensor Detector Module
+
+#### Basic Functionality
+
+Using a python code to HIGH or LOW on GPIO pin listed in config.js as `pin` variable or default pin 26 if not listed, when motion is not detected for `screentimeout` in minutes the python code will turn of hdmi using `tvservice -o' command. when motion is once again detected the python code uses 2 commands `tvservice -p` followed by `fbset -depth 8 && fbset -depth 16 && xrefresh`; Which powers on the monitor and refreshes the desktop display. 
+
+For issues with motion detection please tag @justbill2020 on the gitter chat or [file an issue](https://github.com/evancohen/smart-mirror/issues/new).  
 
 ## Errors
 Note that if you start the mirror and get a white screen you most likeley have an issue with your config.

@@ -1,11 +1,36 @@
 # Troubleshooting
 
-##### Microphone issues
-This is the definitive answer to all of your problems (hopefully). There is no need to mess around with ALSA conf files. All you have to do is run:
+### Microphone and Speech Recognition issues
+Most of these issues can be fixed by following the following:
 
+1. Have you[installed all necessary dependencies](http://docs.smart-mirror.io/docs/installation.html#installing-smart-mirror-dependencies)?
+2. Have you created [chromium speech keys](docs.smart-mirror.io/docs/chromium_speech_keys.html)?
+3. Is your microphone configured to stream to multiple sources simultaneously (see [#307](https://github.com/evancohen/smart-mirror/issues/307))?
+
+If you've done all three of those things and are still having issues I would recommend running `npm start dev` and seeing what (if any) error you get after you say "smart mirror".
+
+**If saying "smart mirror" does nothing:**
+There is likely an issue with the keyword spotter. You can run it from the `smart-mirror` directory with
+``` bash
+python speech/kws.py smart_mirror.pmdl 0.5
 ```
-sudo aptitude install pulseaudio
+If *that* doesn't work and you've installed all dependencies then the spotter may not be recognizing your voice. You can train the model on your pi on the latest `dev` branch by running `npm run train-model`. More info in #330.
+
+**Still not getting the keyword "smart mirror" to work:**
+Run `npm start dev` and then manually trigger speech recognition by putting the following into the dev tools:
+``` javascript
+annyang.start()
 ```
+
+**If you get a `network` error:**
+Something is probably wrong with step 2 above. Double check that this is configured correctly and follow the [troubleshooting steps](http://docs.smart-mirror.io/docs/chromium_speech_keys.html#troubleshooting) if you get stuck.
+
+**If you get an `audio-capture` error:**
+This is likely an issue with step 3. To test your microphone you can run 
+``` bash
+npm microphone-debug
+```
+Note: that this will not be streaming to multiple processes, you can simulate this by running the python command mentioned above from another terminal tab.
 Then, optionally, if you want to force sound out of the headphone jack:
 ```
 sudo modprobe snd_bcm2835
@@ -18,5 +43,5 @@ sudo amixer cset numid=3 0
 ```
 A reboot is required after this.
 
-##### Mirror won't start
+### Mirror won't start
 The mirror can not be started via `npm start` over ssh, however you can run the "run on boot" script to start the mirror remotely.

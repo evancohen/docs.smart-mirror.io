@@ -19,11 +19,7 @@ sudo cp -R * /usr/local/
 ##### Installing smart mirror dependencies
 You'll also need to install the following in order to run the keyword spotter and have the mirror listen to you:
 ```
-sudo apt-get install python-pyaudio python3-pyaudio sox pulseaudio-module-jack
-```
-[Optional] You may also install the following if you are having trouble recording or playing back audio. It will provide a GUI for configuring audio input/output:
-```
-sudo apt-get install pavucontrol
+sudo apt-get install python-pyaudio python3-pyaudio sox
 ```
 
 ##### Getting the code

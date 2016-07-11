@@ -3,9 +3,9 @@
 ### Microphone and Speech Recognition issues
 Most of these issues can be fixed by following the following:
 
-1. Have you[installed all necessary dependencies](http://docs.smart-mirror.io/docs/installation.html#installing-smart-mirror-dependencies)?
+1. Have you [installed all necessary dependencies](http://docs.smart-mirror.io/docs/installation.html#installing-smart-mirror-dependencies)?
 2. Have you created [chromium speech keys](docs.smart-mirror.io/docs/chromium_speech_keys.html)?
-3. Is your microphone configured to stream to multiple sources simultaneously (see [#307](https://github.com/evancohen/smart-mirror/issues/307))?
+3. Is your microphone [configured to stream to multiple sources simultaneously](http://docs.smart-mirror.io/docs/configure_the_pi.html#audio-input-and-output)?
 
 If you've done all three of those things and are still having issues I would recommend running `npm start dev` and seeing what (if any) error you get after you say "smart mirror".
 
@@ -42,6 +42,8 @@ sudo modprobe snd_bcm2835
 sudo amixer cset numid=3 0
 ```
 A reboot is required after this.
+
+**Still having issues?** Check out [recent audio related issues on GitHub](https://github.com/evancohen/smart-mirror/issues?utf8=%E2%9C%93&q=is%3Aissue%20audio).
 
 ### Mirror won't start
 The mirror can not be started via `npm start` over ssh, however you can run the "run on boot" script to start the mirror remotely.

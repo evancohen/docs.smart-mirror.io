@@ -43,18 +43,55 @@ Here the recording device is card 1, device 0, or `hw1:0`.
 And finally you'll want to update your sound config file with `nano ~/.asoundrc`:
 
 ``` bash
+#asym fun start here. we define one pcm device called "dmixed"
+pcm.dmixed {
+    ipc_key 1025
+    type dmix
+    #this is your output device
+    slave.pcm "hw:0,0"
+}
+
+#one called "dsnooped" for capturing
+pcm.dsnooped {
+    ipc_key 1027
+    type dsnoop
+    #this is your input device
+    slave.pcm "hw:1,0"
+}
+
+#and this is the real magic
+pcm.asymed {
+    type asym
+    playback.pcm "dmixed"
+    capture.pcm "dsnooped"
+}
+
+#a quick plug plugin for above device to do the converting magic
+pcm.pasymed {
+    type plug
+    slave.pcm "asymed"
+}
+
+#a ctl device to keep xmms happy
+ctl.pasymed {
+    type hw
+    card 0
+}
+
+#for aoss:
+pcm.dsp0 {
+    type plug
+    slave.pcm "asymed"
+}
+
+ctl.mixer0 {
+    type hw
+    card 0
+}
+
 pcm.!default {
-   type asym
-   playback.pcm {
-     type plug
-     slave.pcm "hw:0,0"
-   }
-   capture.pcm {
-     type dsnoop
-     ipc_key 9
-     ipc_key_add_uid true
-     slave.pcm "hw:1,0"
-   }
+    type plug
+    slave.pcm "asymed"
 }
 ```
 

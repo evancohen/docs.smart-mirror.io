@@ -43,12 +43,11 @@ Here the recording device is card 1, device 0, or `hw1:0`.
 And finally you'll want to update your sound config file with `nano ~/.asoundrc`:
 
 ``` bash
-#asym fun start here. we define one pcm device called "dmixed"
-pcm.dmixed {
-    ipc_key 1025
-    type dmix
+#asym fun start here. we define one pcm device called "pluged"
+pcm.pluged {
+    type plug
     #this is your output device
-    slave.pcm "hw:0,0"
+    slave.pcm "hw:0,1"
 }
 
 #one called "dsnooped" for capturing
@@ -62,7 +61,7 @@ pcm.dsnooped {
 #and this is the real magic
 pcm.asymed {
     type asym
-    playback.pcm "dmixed"
+    playback.pcm "pluged"
     capture.pcm "dsnooped"
 }
 
@@ -94,7 +93,6 @@ pcm.!default {
     slave.pcm "asymed"
 }
 ```
-
 Note that this requires a reboot to take effect.
 
 #### Rotate your monitor

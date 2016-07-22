@@ -231,11 +231,11 @@ motion : {
 
 #### Basic Functionality
 
-Using a python code to HIGH or LOW on GPIO pin listed in config.js as `pin` variable or default pin 26 if not listed, when motion is not detected for `screentimeout` in minutes the python code will turn of hdmi using `tvservice -o' command. when motion is once again detected the python code uses 2 commands `tvservice -p` followed by `fbset -depth 8 && fbset -depth 16 && xrefresh`; Which powers on the monitor and refreshes the desktop display. 
+Using a python code to HIGH or LOW on GPIO pin listed in config.js as `pin` variable or default pin 26 if not listed, when motion is not detected for `screentimeout` in minutes the python code will turn of hdmi using `tvservice -o` command. when motion is once again detected the python code uses 2 commands `tvservice -p` followed by `fbset -depth 8 && fbset -depth 16 && xrefresh`; Which powers on the monitor and refreshes the desktop display. 
 
 For issues with motion detection please tag @justbill2020 on the gitter chat or [file an issue](https://github.com/evancohen/smart-mirror/issues/new).  
 
 ## Errors
-Note that if you start the mirror and get a white screen you most likeley have an issue with your config.
+Note that if you start the mirror and get a white screen you most likely have an issue with your config.
 
 Next Step: [Configure the Pi](configure_the_pi.md)

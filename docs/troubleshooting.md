@@ -1,5 +1,8 @@
 # Troubleshooting
 
+### Issues installing electron-prebuilt
+You must run `npm install` when logged into the GUI and not over ssh as electron-prebuilt will not install outside of the GUI.
+
 ### Microphone and Speech Recognition issues
 Most of these issues can be fixed by following the following:
 

@@ -31,7 +31,7 @@ Something is probably wrong with step 2 above. Double check that this is configu
 **If you get an `audio-capture` error:**
 This is likely an issue with step 3. To test your microphone you can run 
 ``` bash
-npm microphone-debug
+npm run microphone-debug
 ```
 Note: that this will not be streaming to multiple processes, you can simulate this by running the python command mentioned above from another terminal tab.
 Then, optionally, if you want to force sound out of the headphone jack:

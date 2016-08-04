@@ -1,5 +1,5 @@
 # Chromium Speech Keys
-### [This is optional]
+### [This is No longer optional]
 
 Because of the high volume smart mirrors being created we have cumulatively been using the Google Speech quota for `electron-prebuilt`.
 
@@ -23,10 +23,10 @@ After applying your changes you must restart your pi for them to take effect. On
 ### Troubleshooting
 
 #### Still getting 'Google Speech Recognizer is down' error
-Double check that `printenv` displays the API keys. Check the Google developer console to see if your quota is actually being used.
+Double check that `printenv` displays the API keys. Check the Google developer console to see if your quota is actually being used. Please note, there are no quotes surrounding your API Keys in the `.profile` file.
 
 #### It worked, but then it stopped. Why?
 Currently you can only get 50 requests per day for an app. Check the developer console to see if you have used these requests.
 
-The mirror burns through these requests within minutes when left running. To fix this Evan is investigating [Keyword Spotting](https://github.com/evancohen/smart-mirror/issues/170) to only make requests after a you say "smart mirror".
+The mirror burns through these requests within minutes when left running. To fix this Evan has utilized [Keyword Spotting](https://github.com/evancohen/smart-mirror/issues/170) to only make requests after a you say "smart mirror".
 

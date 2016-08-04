@@ -23,7 +23,8 @@ After applying your changes you must restart your pi for them to take effect. On
 ### Troubleshooting
 
 #### Still getting 'Google Speech Recognizer is down' error
-Double check that `printenv` displays the API keys. Check the Google developer console to see if your quota is actually being used. Please note, there are no quotes surrounding your API Keys in the `.profile` file.
+Double check that `printenv` displays the API keys. Check the Google developer console to see if your quota is actually being used. 
+>Please note, there are no quotes surrounding your API Keys in the `.profile` file.
 
 #### It worked, but then it stopped. Why?
 Currently you can only get 50 requests per day for an app. Check the developer console to see if you have used these requests.

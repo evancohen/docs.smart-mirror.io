@@ -205,8 +205,6 @@ traffic: {
 If any of your trips aren't showing up it's likely because Bing Maps can't find the address you specified. Using a full postal address should fix this issue.
 
 ## Errors
-Note that if you start the mirror and get a white screen you most likely have an issue with your config. Often this is caused by a missing comma somewhere within the config. There should be a comma after each closing bracket (i.e. `},`) as well as between each property such as
-```
-{
+Note that if you start the mirror and get a white screen you most likely have an issue with your config. Often this is caused by a missing comma somewhere within the config. Use of an online javascript linter to help find common syntax errors. 
 
 Next Step: [Configure the Pi](configure_the_pi.md)

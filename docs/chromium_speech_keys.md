@@ -1,5 +1,5 @@
-# Chromium Speech Keys
-### [This is No longer optional]
+# Configuring Chromium Speech Keys
+>### This is no longer optional and should be done as part of the configuration
 
 Because of the high volume smart mirrors being created we have cumulatively been using the Google Speech quota for `electron-prebuilt`.
 

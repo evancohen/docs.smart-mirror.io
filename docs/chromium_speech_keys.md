@@ -29,5 +29,6 @@ Double check that `printenv` displays the API keys. Check the Google developer c
 #### It worked, but then it stopped. Why?
 Currently you can only get 50 requests per day for an app. Check the developer console to see if you have used these requests.
 
-The mirror burns through these requests within minutes when left running. To fix this Evan has utilized [Keyword Spotting](configure_the_mirror.md#speech)Keyword Spotting to only make requests after a you say "smart mirror".
+The mirror burns through these requests within minutes when left running. To fix this Evan has utilized [Keyword Spotting](configure_the_mirror.md#speech) to only make requests after a you say "smart mirror". 
+>Keyword Spotting is currently only supported on a Raspbery Pi. Although it may work with other operating systems. It is completely unsupported on windows.
 

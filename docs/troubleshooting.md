@@ -26,7 +26,7 @@ annyang.start()
 ```
 
 **If you get a `network` error:**
-Something is probably wrong with step 2 above. Double check that this is configured correctly and follow the [troubleshooting steps](http://docs.smart-mirror.io/docs/chromium_speech_keys.html#troubleshooting) if you get stuck.
+Something is probably wrong with step 2 above. Double check that this is configured correctly and follow the [troubleshooting steps](http://docs.smart-mirror.io/docs/chromium_speech_keys.html#troubleshooting) if you get stuck. Keep in mind that the speech keys should not be enclosed in quotes in the `.profile` file.
 
 **If you get an `audio-capture` error:**
 This is likely an issue with step 3. To test your microphone you can run 
@@ -44,7 +44,8 @@ Or, to get sound over HDMI:
 sudo modprobe snd_bcm2835
 sudo amixer cset numid=3 0
 ```
-A reboot is required after this.
+
+> ###NOTE: A reboot is required after this.
 
 **Still having issues?** Check out [recent audio related issues on GitHub](https://github.com/evancohen/smart-mirror/issues?utf8=%E2%9C%93&q=is%3Aissue%20audio).
 

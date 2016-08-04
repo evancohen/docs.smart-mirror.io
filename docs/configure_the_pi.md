@@ -121,17 +121,10 @@ sudo apt-get install unclutter
 Then Add `unclutter -idle 0.1 -root` to **/etc/xdg/lxsession/LXDE-pi/autostart** with `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
  
 #### Start the mirror on boot
-Optionally, you can configure your Pi to start the mirror on boot
-In **/home/pi/**, create the file called **smart-start.sh** via 
+Optionally, you can configure your Pi to start the mirror on boot. There is a script in the **/smart-mirror/scripts** folder called **bash-start.sh**. We will copy that file to the **/home/pi** folder. 
 ```
-nano ~/smart-start.sh
-```
-with the following content:
-```
-#!/bin/bash
-export DISPLAY=:0
-export XAUTHORITY=/home/pi/.Xauthority
-cd /home/pi/smart-mirror && npm start
+cd ~
+cp ./smart-mirror/scripts/bash-start.sh smart-start.sh
 ```
 
 Make the file owned by the user pi

@@ -8,7 +8,7 @@ sudo raspi-config
 And then choose "Expand root partition to fill SD card" option.
 
 #### Audio input and output
-To configure your USB microphone and audio output  you'll want to determine your playback and recording devices:
+To configure your USB microphone and audio output you'll want to determine your playback and recording devices:
 
 ``` bash
 $ aplay -l
@@ -93,32 +93,40 @@ pcm.!default {
     slave.pcm "asymed"
 }
 ```
-Note that this requires a reboot to take effect.
+
+> #### Note that this requires a reboot to take effect.
 
 #### Rotate your monitor
-To rotate your monitor you'll need to add the following line to `/boot/config.txt`
+To rotate your monitor you'll need to add the following line to **/boot/config.txt** using the following command ```sudo nano /boot/config.txt```
 ```
 display_rotate=1
 ```
 You can also set this value to '3' to have a flipped vertical orientation. 
 
-#### Disable screensaver
-To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver` and `@lxpanel` lines in `/home/pi/.config/lxsession/LXDE-pi/autostart`. You'll also want to add the following lines to that same file
+#### Disable screensaver and remove panel
+Edit the **/home/pi/.config/lxsession/LXDE-pi/autostart** file with `nano /home/pi/.config/lxsession/LXDE-pi/autostart`.
+* To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver`. You'll also want to add the following lines to that same file
 ```
 @xset s off
 @xset -dpms
 @xset s noblank
 ```
+* To remove the panel at the top of the screen to comment out the `@lxpanel` lines 
+ 
 
 #### Hide the mouse when inactive
 ```
 sudo apt-get install unclutter
 ```
-Then add `unclutter -idle 0.1 -root` to `/etc/xdg/lxsession/LXDE-pi/autostart`.
+Then Add `unclutter -idle 0.1 -root` to **/etc/xdg/lxsession/LXDE-pi/autostart** with `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
  
 #### Start the mirror on boot
 Optionally, you can configure your Pi to start the mirror on boot
-In **/home/pi/**, create the file called smart-start.sh with the following content:
+In **/home/pi/**, create the file called **smart-start.sh** via 
+```
+nano ~/smart-start.sh
+```
+with the following content:
 ```
 #!/bin/bash
 export DISPLAY=:0

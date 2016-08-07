@@ -9,7 +9,7 @@ cp config.example.js config.js
 
 Then fill out `config.js`. See below for links to get service keys and example values for config properties.
 
-It is **highly recommended** that you [train your own keyword](#speech).
+It is **highly recommended** that you [train your own personal model for the keyword](#speech). By training your own model, you increase the samples available so a universal model can be created. Also, this solves many of the issues where the keyword is not detected.
 #### Index
 - [Language](#language)
 - [Speech](#speech)
@@ -61,7 +61,7 @@ You can set these values to be `"main"` (recommended) or `"icesnow"`.
 ###### Disable Greeting
 You can disable the greeting by setting it to an array with an empty string:
 ``` javascript
-array: [""]
+greeting: [""]
 ```
 ###### Randomly Selected Greeting
 
@@ -165,7 +165,7 @@ soundcloud: {
 ```
 
 ### Traffic
-Using your key from the [Bing Maps Portal](https://www.bingmapsportal.com/Application) you can specify an array of `trips` and a `relead_interval` (how often should the mirror refresh trip data, in minutes).
+Using your key from the [Bing Maps Portal](https://www.bingmapsportal.com/Application) you can specify an array of `trips` and a `reload_interval` (how often should the mirror refresh trip data, in minutes).
 
 A trip has the following properties:
 - `mode` - Mode of transportation. One of
@@ -202,40 +202,9 @@ traffic: {
 }
 ```
 
-If any of your trips aren't showing up it's likeley because Bing Maps can't find the address you specified. Using a full postal address should fix this issue.
-
-### Motion
-Add motion detection to the mirror to turn it on and off. This requires a motion sensor.
-
-|Variable | Usage | Data Type | Default|
-| --|--|--|--|
-| `pin` | Identify GPIO input Pin connected to output pin of the PIR device or other device used to detect motion | int | 26|
-| `screentimeout` | Amount of time in minutes before HDMI is turned off after last detected motion | float | 5.0|
-| `enable` | enable motion detection | boolean | false|
-| `debug` | enable debugging (not implemented) | boolean | true|
-
-#### Sample usage
-In your `config.js` file:
-``` javascript
-motion : {
-    pin : 26,
-    screentimeout : 5.0,
-    enable : true,
-    debug : true
-},
-```
-
-#### PIR device used in testing
-
-[EMY 5 X HC-SR501](https://smile.amazon.com/gp/product/B00FDPO9B8) - Adjust Ir Pyroelectric Infrared PIR Motion Sensor Detector Module
-
-#### Basic Functionality
-
-Using a python code to HIGH or LOW on GPIO pin listed in config.js as `pin` variable or default pin 26 if not listed, when motion is not detected for `screentimeout` in minutes the python code will turn of hdmi using `tvservice -o` command. when motion is once again detected the python code uses 2 commands `tvservice -p` followed by `fbset -depth 8 && fbset -depth 16 && xrefresh`; Which powers on the monitor and refreshes the desktop display. 
-
-For issues with motion detection please tag @justbill2020 on the gitter chat or [file an issue](https://github.com/evancohen/smart-mirror/issues/new).  
+If any of your trips aren't showing up it's likely because Bing Maps can't find the address you specified. Using a full postal address should fix this issue.
 
 ## Errors
-Note that if you start the mirror and get a white screen you most likely have an issue with your config.
+Note that if you start the mirror and get a white screen you most likely have an issue with your config. Often this is caused by a missing comma somewhere within the config. Use of an online javascript linter to help find common syntax errors. 
 
 Next Step: [Configure the Pi](configure_the_pi.md)

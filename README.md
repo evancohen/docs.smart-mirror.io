@@ -19,13 +19,26 @@ Please file any issues or bugs [on GitHub](https://github.com/evancohen/smart-mi
 
 ### Supported Platforms
 
-Smart-mirror is compatible with the following operating systems:
+Smart-mirror is compatible and currently all features are supported with the following operating systems:
 
-- ![](docs/linux.png) Linux (Most major distributions)
 - ![](docs/raspbian.png) Raspbian
   - Pi 2
   - Pi 3
+
+### Unsupported Platforms
+
+Smart-mirror is either partially compatible or some features are not supported with the following operating systems:
+
+- ![](docs/linux.png) Linux (Most major distributions)
+  - Features requiring RPiGPIO is not available 
 - ![](docs/windows.png) Windows 7 / Server 2008 R2 or higher
+  - Keyword Spotter is not supported. Snowboy has not released a pre-compiled binary [Snowboy#31](https://github.com/Kitt-AI/snowboy/issues/31)
+  - Features requiring RPiGPIO is not available
+- ![](docs/windows.png) Windows 10 IoT Core
+  - Windows 10 IoT has no gui. Therefore, is not compatible with this project.
 - ![](docs/mac.png) OS X >= 10.8
+  - Most components are compatible however recieving support is limited to users available on gitter at given time.
+  - Features requiring RPiGPIO is not available
 - ![](docs/cordova.png) iOS and Android (Experimental!)
   - See the `cordova` branch for details
+  - Features requiring RPiGPIO is not available

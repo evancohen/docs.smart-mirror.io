@@ -91,9 +91,9 @@ forecast : {
 It should be ok to leave the units set as auto because the units that are used are determined by your location. If you would like to use other units you can look the [forecast.io documentation](https://developer.forecast.io/docs/v2#options) for more info.
 
 ### Geolocation
-This is an **optional** setting and is only for people who are having issues with the smart-mirror's built in geolocatin. You can override your latitude and longitude by specifying the following:
+This is an **optional** setting and is only for people who are having issues with the smart-mirror's built in geolocation. You can override your latitude and longitude by specifying the following:
 ``` javascript
-geo_position: {
+geoPosition: {
     latitude: 78.23423423,
     longitude: 13.123124142
 }

@@ -12,4 +12,5 @@
 * [Development and Contributing](docs/development_and_contributing.md)
 * [Updating](docs/updating.md)
 * [Index](SUMMARY.md)
+* Additional Resources
 

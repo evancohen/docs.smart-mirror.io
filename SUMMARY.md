@@ -12,5 +12,8 @@
 * [Development and Contributing](docs/development_and_contributing.md)
 * [Updating](docs/updating.md)
 * [Index](SUMMARY.md)
-* [Additional Resources](docs/How_To_Install_Raspbian.md)
+* [How Tos](docs/How_Tos.md)
+  * How to Install Raspbian Jessie
+  * How to Obtain Chromium Speech API Keys
+  * How to 
 

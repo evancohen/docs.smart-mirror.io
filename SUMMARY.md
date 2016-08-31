@@ -12,5 +12,5 @@
 * [Development and Contributing](docs/development_and_contributing.md)
 * [Updating](docs/updating.md)
 * [Index](SUMMARY.md)
-* [How Tos](docs/How_Tos.md)
+* [How Tos](docs/how_tos.md)
 

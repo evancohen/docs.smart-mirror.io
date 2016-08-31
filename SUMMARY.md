@@ -13,6 +13,6 @@
 * [Updating](docs/updating.md)
 * [Index](SUMMARY.md)
 * [How Tos](docs/how_tos.md)
-   * How To Obtain Chromium Speech Keys
+   * [How To Obtain Chromium Speech Keys](docs/howto/how_to_obtain_chromium_speech_keys.md)
    * How To Install Raspbian(full)
 

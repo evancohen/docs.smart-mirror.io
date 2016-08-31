@@ -4,8 +4,7 @@
         "youtube",
         "github",
         "addcssjs",
-        "hide-published-with",
-        "translated"
+        "hide-published-with"
     ],
     "pluginsConfig": {
         "ga": {

@@ -13,4 +13,5 @@
 * [Updating](docs/updating.md)
 * [Index](SUMMARY.md)
 * [How Tos](docs/how_tos.md)
+   * How To Obtain Chromium Speech Keys
 

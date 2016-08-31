@@ -14,4 +14,5 @@
 * [Index](SUMMARY.md)
 * [How Tos](docs/how_tos.md)
    * How To Obtain Chromium Speech Keys
+   * How To Install Raspbian(full)
 

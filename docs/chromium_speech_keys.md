@@ -18,7 +18,9 @@ export GOOGLE_DEFAULT_CLIENT_ID=your_client_id
 export GOOGLE_DEFAULT_CLIENT_SECRET=your_client_secret
 ```
 
-After applying your changes you must restart your pi for them to take effect. Once you've done that you can test these values using `printenv` to display all environmental variables on your Pi. If your keys do not appear ensure 
+> **After applying your changes you must restart your pi for them to take effect.** 
+
+Once you've restarted, you can test these values using `printenv` to display all environmental variables on your Pi.
 
 ### Troubleshooting
 

@@ -3,7 +3,9 @@
 **This instructions are specific to the Raspberry Pi 2 and 3**
 
 To get started I suggest a clean install of Raspbian. You can snag a fresh copy of Jessie (recommended, it's the future) or Wheezy from the [Raspbian Download Page](https://www.raspberrypi.org/downloads/raspbian/).
-Make sure to download the **Full desktop image**. Do not use NOOBS to install Raspbian.
+Make sure to download the **Full desktop image**. Do not use NOOBS to install Raspbian. 
+
+For instructions on how to install Raspbian see [Installing Operating System Images](https://www.raspberrypi.org/documentation/installation/installing-images/).
 
 You'll also need to install Node (v4.4.3+) which now comes bundled with npm.
 ```

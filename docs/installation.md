@@ -7,15 +7,10 @@ Make sure to download the **Full desktop image**. Do not use NOOBS to install Ra
 
 For instructions on how to install Raspbian see [Installing Operating System Images](https://www.raspberrypi.org/documentation/installation/installing-images/).
 
-You'll also need to install Node (v4.4.3+) which now comes bundled with npm.
+You'll also need to install Node (v6.x) which now comes bundled with npm.
 ```
-wget https://nodejs.org/dist/v4.4.3/node-v4.4.3-linux-armv7l.tar.gz 
-tar -xvf node-v4.4.3-linux-armv7l.tar.gz 
-cd node-v4.4.3-linux-armv7l
-```
-Copy to /usr/local
-```
-sudo cp -R * /usr/local/
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
 ##### Installing smart mirror dependencies

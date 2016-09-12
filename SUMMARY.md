@@ -6,8 +6,8 @@
    * [Install Raspbian](docs/installing_raspbianmd.md)
    * [Install dependencies and run](docs/install_dependencies.md)
 * [Configuration](docs/configuration.md)
-   * [Configure the Pi](docs/configure_the_pi.md)
    * [Configure the smart-mirror](docs/configure_the_mirror.md)
+   * [Configure the Pi](docs/configure_the_pi.md)
    * [Configuring Chromium Speech Keys](docs/chromium_speech_keys.md)
 * Running
    * [First Time Running Smart Mirror](first_time_running_smart_mirror.md)

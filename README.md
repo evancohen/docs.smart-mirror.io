@@ -17,6 +17,14 @@ If you encounter problems along the way check out the [Troubleshooting](docs/tro
 
 Please file any issues or bugs [on GitHub](https://github.com/evancohen/smart-mirror/issues/new).
 
+
+## About this documentation
+
+This documentation is a constant work in progress. It is updated as we find issues and as we add new features. Who is the "we"? We are a community of people contributing, supporting, and improving this project. We are working to make the documentation as helpful, clear, and accurate as possible. 
+
+Issues and concerns with the documentation?
+Please file an issue [on GitHub](https://github.com/evancohen/smart-mirror/issues/new). Commenting in line can cause readability issues for others. It is also difficult for anyone other than Evan Cohen to address or remove after resolving the documentation.
+
 ### Supported Platforms
 The smart-mirror is fully compatible with the following operating systems. Note that a small number of features require GPIO, devices without this will not be able to take advantage of these features.
 

@@ -120,5 +120,4 @@ sudo apt-get install unclutter
 ```
 Then Add `unclutter -idle 0.1 -root` to **/etc/xdg/lxsession/LXDE-pi/autostart** with `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
 
-Next Step: [Configure the smart-mirror](configure_the_mirror.md)
-Next Step: [Configure the smart-mirror](configure_the_mirror.md)
+Next Step: [Configuring Chromium Speech Keys](chromium_speech_keys.md)

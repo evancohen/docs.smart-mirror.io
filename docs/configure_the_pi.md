@@ -105,13 +105,13 @@ You can also set this value to '3' to have a flipped vertical orientation.
 
 #### Disable screensaver and remove panel
 Edit the **/home/pi/.config/lxsession/LXDE-pi/autostart** file with `nano /home/pi/.config/lxsession/LXDE-pi/autostart`.
-* To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver`. You'll also want to add the following lines to that same file
+* (RECCOMMENDED) To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver`. You'll also want to add the following lines to that same file
 ```
 @xset s off
 @xset -dpms
 @xset s noblank
 ```
-* To remove the panel at the top of the screen to comment out the `@lxpanel` lines 
+* (OPTIONAL) To remove the panel at the top of the screen to comment out the `@lxpanel` lines. If you want to be able to easily access the "menu" at the top of the screen do not do this step.
  
 
 #### Hide the mouse when inactive
@@ -119,24 +119,5 @@ Edit the **/home/pi/.config/lxsession/LXDE-pi/autostart** file with `nano /home/
 sudo apt-get install unclutter
 ```
 Then Add `unclutter -idle 0.1 -root` to **/etc/xdg/lxsession/LXDE-pi/autostart** with `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
- 
-#### Start the mirror on boot
-Optionally, you can configure your Pi to start the mirror on boot. There is a script in the **/smart-mirror/scripts** folder called **bash-start.sh**. We will copy that file to the **/home/pi** folder. 
-```
-cd ~
-cp ./smart-mirror/scripts/bash-start.sh smart-start.sh
-```
 
-Make the file owned by the user pi
-```
-chown pi:pi /home/pi/smart-start.sh
-chmod +x /home/pi/smart-start.sh
-```
-
-Then, edit the file **/home/pi/.config/lxsession/LXDE-pi/autostart**
-and add the following line to the end:
-`/home/pi/smart-start.sh &`
-Reboot the Pi and you should be good to go
-
-
-Next step: [Install dependencies and run](install_dependencies_and_run.md)
+Next step: [Install dependencies](install_dependencies.md)

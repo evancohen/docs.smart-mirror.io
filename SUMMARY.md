@@ -13,7 +13,7 @@
    * [First Time Running Smart Mirror](first_time_running_smart_mirror.md)
    * [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)
 * [Troubleshooting](docs/troubleshooting.md)
-   * NPM Install Issues
+   * [NPM Install Issues](docs/npm_install_issues.md)
    * Audio Output Issues
    * Microphone Issues
    * Chromium Speech Keys Issues

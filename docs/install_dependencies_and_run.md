@@ -5,3 +5,5 @@ Before we can run the thing we've got to install the projects dependencies. From
 npm install
 ```
 
+This will take a few minutes, it has to download [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt).
+

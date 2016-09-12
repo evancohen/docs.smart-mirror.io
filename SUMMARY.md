@@ -14,7 +14,7 @@
    * [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)
 * [Troubleshooting](docs/troubleshooting.md)
    * [Issues installing electron-prebuilt](docs/npm_install_issues.md)
-   * Microphone and Speech Recognition issues
+   * [Microphone and Speech Recognition issues](docs/microphone_and_speech_recognition_issues.md)
 * [Development and Contributing](docs/development_and_contributing.md)
 * [Updating](docs/updating.md)
 * [Index](SUMMARY.md)

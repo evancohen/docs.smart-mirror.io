@@ -213,4 +213,4 @@ If any of your trips aren't showing up it's likely because Bing Maps can't find 
 
 Now that you've configured everything you're ready to run your Smart-Mirror for the first time.
 
-Next Step: 
+Next Step: [First Time Running Smart Mirror](first_time_running_smart_mirror.md)

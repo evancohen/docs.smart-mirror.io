@@ -13,12 +13,6 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-##### Installing smart mirror dependencies
-You'll also need to install the following in order to run the keyword spotter and have the mirror listen to you:
-```
-sudo apt-get install python-pyaudio python3-pyaudio sox
-```
-
 ##### Getting the code
 Next up you'll want to clone this repository into your user's home folder on your Pi:
 ```

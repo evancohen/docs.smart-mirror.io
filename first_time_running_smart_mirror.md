@@ -9,3 +9,5 @@ npm start
 Note that if you start the mirror and get a white screen you most likely have an issue with your config. Often this is caused by a missing comma somewhere within the config. Use of an online javascript linter to help find common syntax errors. 
 
 Have a different issue? Take a look at the [Troubleshooting Page](troubleshooting.md).
+
+Next Step (OPTIONAL): 

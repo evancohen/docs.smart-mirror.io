@@ -13,22 +13,23 @@
 (This list might be out of date; try searching for APIs starting with "Chrome" or having "for Chrome" in the name.)
   * Calendar API
   * Contacts API
-  * Drive API (Optional, enable this for Files.app on Chrome OS and SyncFileSystem API)
+  * Drive API ***(Optional, enable this for Files.app on Chrome OS and SyncFileSystem API)***
   * Chrome Remote Desktop API
   * Chrome Spelling API
   * Chrome Suggest API
   * Chrome Sync API
   * Chrome Translate Element
   * Chrome Web Store API
-  * Chrome OS Hardware ID API (Optional, Chrome OS)
-  * Device Registration API (Optional, Chrome OS)
+  * Chrome OS Hardware ID API ***(Optional, Chrome OS)***
+  * Device Registration API ***(Optional, Chrome OS)***
   * Google Clound DNS API
   * Google Cloud Storage
   * Google Cloud Storage JSON API
   * Google Maps Geolocation API 
-(requires enabling billing but is free to use; you can skip this one, in which case geolocation features of Chrome will not work)
+>>(requires enabling billing but is free to use; you can skip this one, in which case geolocation features of Chrome will not work). 
+>> Entering your `geoPosition` in `config.js` will be required if you don't enable billing.
   * Google Maps Time Zone API
-  * Google Now For Chrome API (Optional, enabled to show Google Now cards)
+  * Google Now For Chrome API ***(Optional, enabled to show Google Now cards)
   * Google+ API
   * Nearby Messages API
   * Safe Browsing API

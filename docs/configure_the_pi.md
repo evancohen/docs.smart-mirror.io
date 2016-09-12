@@ -8,7 +8,7 @@ sudo raspi-config
 And then choose "Expand root partition to fill SD card" option.
 
 #### Audio input and output
-To configure your USB microphone and audio output you'll want to determine your playback and recording devices:
+If you run into issues configuring your audio see the [Troubleshooting your Microphone and Speech Recognition issues](troubleshooting.md#microphone_and_speech_recognition_issues) section. To configure your USB microphone and audio output you'll want to determine your playback and recording devices. 
 
 ``` bash
 $ aplay -l

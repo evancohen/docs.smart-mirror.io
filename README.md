@@ -2,9 +2,9 @@
 
 This is the official documentation for the [smart-mirror](https://github.com/evancohen/smart-mirror). If you are reading this on [docs.smart-mirror.io](http://docs.smart-mirror.io), great! If not you should head on over.
 
-Smart-mirror was inspired by [HomeMirror](https://github.com/HannahMitt/HomeMirror) and Michael Teeuw's [Magic Mirror](http://michaelteeuw.nl/tagged/magicmirror). It was originally created in a weekend and is now maintained by a growing community of contributors and enthusiasts. 
+The smart-mirror was inspired by [HomeMirror](https://github.com/HannahMitt/HomeMirror) and Michael Teeuw's [Magic Mirror](http://michaelteeuw.nl/tagged/magicmirror). It was originally created in a weekend and is now maintained by a growing community of contributors and enthusiasts. 
 
-Smart-mirror is voice controlled, integrates with a growing number of services, and can control your lights :)
+Smart-mirror is voice controlled, integrates with a growing number of services, and can control your smart devices :)
 
 ##### Video Demo: [See it in action](https://youtu.be/PDIbhV8Nvq8)
 {% youtube %}
@@ -18,14 +18,17 @@ If you encounter problems along the way check out the [Troubleshooting](docs/tro
 Please file any issues or bugs [on GitHub](https://github.com/evancohen/smart-mirror/issues/new).
 
 ### Supported Platforms
+The smart-mirror is fully compatible with the following operating systems. Note that a small number of features require GPIO, devices without this will not be able to take advantage of these features.
 
-Smart-mirror is compatible with the following operating systems:
-
-- ![](docs/linux.png) Linux (Most major distributions)
 - ![](docs/raspbian.png) Raspbian
   - Pi 2
   - Pi 3
-- ![](docs/windows.png) Windows 7 / Server 2008 R2 or higher
+- ![](docs/linux.png) Linux (Most major distributions)
 - ![](docs/mac.png) OS X >= 10.8
+
+### Partially supported Platforms
+The smart-mirror is partially compatible with the following operating systems
+- ![](docs/windows.png) Windows 7 / Server 2008 R2 or higher
+  - Keyword Spotter is not supported. See [snowboy#31](https://github.com/Kitt-AI/snowboy/issues/31).
 - ![](docs/cordova.png) iOS and Android (Experimental!)
   - See the `cordova` branch for details

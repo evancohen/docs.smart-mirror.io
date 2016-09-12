@@ -35,4 +35,4 @@ Currently you can only get 50 requests per day for an app. Check the developer c
 The mirror burns through these requests within minutes when left running. To fix this Evan has utilized [Keyword Spotting](configure_the_mirror.md#speech) to only make requests after a you say "smart mirror". 
 >Keyword Spotting is currently only supported on a Raspbery Pi. Although it may work with other operating systems. It is completely unsupported on windows.
 
-
+Next Step: [Configure the smart-mirror](configure_the_mirror.md)

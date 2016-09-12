@@ -1,7 +1,13 @@
 # Install Smart Mirror dependencies
 
+You'll need to install the following in order to run the keyword spotter and have the mirror listen to you:
+```
+sudo apt-get install python-pyaudio python3-pyaudio sox
+```
+
 Before we can run the thing we've got to install the projects dependencies. From the root of the `smart-mirror` directory run:
 ```
+cd ~/smart-mirror
 npm install
 ```
 

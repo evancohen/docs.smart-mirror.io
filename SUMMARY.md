@@ -9,7 +9,7 @@
    * [Configure the Pi](docs/configure_the_pi.md)
    * [Configuring Chromium Speech Keys](docs/chromium_speech_keys.md)
    * [Configure the smart-mirror](docs/configure_the_mirror.md)
-* Running
+* [Running](running.md)
    * [First Time Running Smart Mirror](first_time_running_smart_mirror.md)
    * [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)
 * [Troubleshooting](docs/troubleshooting.md)

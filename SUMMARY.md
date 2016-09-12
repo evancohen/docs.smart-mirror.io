@@ -11,7 +11,7 @@
    * [Configuring Chromium Speech Keys](docs/chromium_speech_keys.md)
 * Running
    * [First Time Running Smart Mirror](first_time_running_smart_mirror.md)
-   * Setting up Smart-Mirror to Run on Boot
+   * [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)
 * [Troubleshooting](docs/troubleshooting.md)
    * NPM Install Issues
    * Audio Output Issues

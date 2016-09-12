@@ -2,9 +2,9 @@
 
 Most of these issues can be fixed by following the following:
 
-1. Have you [installed all necessary dependencies](http://docs.smart-mirror.io/docs/installation.html#installing-smart-mirror-dependencies)?
-2. Have you created [chromium speech keys](docs/chromium_speech_keys.html)?
-3. Is your microphone [configured to stream to multiple sources simultaneously](http://docs.smart-mirror.io/docs/configure_the_pi.html#audio-input-and-output)?
+1. Have you [installed all necessary dependencies](install_dependencies.md)?
+2. Have you created [chromium speech keys](chromium_speech_keys.html)?
+3. Is your microphone [configured to stream to multiple sources simultaneously](configure_the_pi.html#audio-input-and-output)?
 
 If you've done all three of those things and are still having issues I would recommend running `npm start dev` and seeing what (if any) error you get after you say "smart mirror".
 

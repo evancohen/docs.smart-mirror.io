@@ -13,4 +13,4 @@ npm install
 
 This will take a few minutes, it has to download [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt). Once it is complete please continue to configuring the smart-mirror.
 
-Next Step: [Configure the smart-mirror](configure_the_mirror.md)
+Next Step: [Configure the Pi](configure_the_pi.md)

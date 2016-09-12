@@ -10,13 +10,13 @@
    * [Configure the Pi](docs/configure_the_pi.md)
    * [Configuring Chromium Speech Keys](docs/chromium_speech_keys.md)
 * Running
-  * First Time Running Smart Mirror
-  * Setting up Smart-Mirror to Run on Boot
+   * [First Time Running Smart Mirror](first_time_running_smart_mirror.md)
+   * Setting up Smart-Mirror to Run on Boot
 * [Troubleshooting](docs/troubleshooting.md)
-  * NPM Install Issues
-  * Audio Output Issues
-  * Microphone Issues
-  * Chromium Speech Keys Issues
+   * NPM Install Issues
+   * Audio Output Issues
+   * Microphone Issues
+   * Chromium Speech Keys Issues
 * [Development and Contributing](docs/development_and_contributing.md)
 * [Updating](docs/updating.md)
 * [Index](SUMMARY.md)

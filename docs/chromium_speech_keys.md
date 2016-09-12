@@ -27,7 +27,7 @@ Once you've restarted, you can test these values using `printenv` to display all
 
 #### Still getting 'Google Speech Recognizer is down' error
 Double check that `printenv` displays the API keys. Check the Google developer console to see if your quota is actually being used. 
->Please note, there are no quotes surrounding your API Keys in the `.profile` file.
+>Please note, there are no quotes surrounding your API Keys in the `~/.profile` file.
 
 
 #### It worked, but then it stopped. Why?

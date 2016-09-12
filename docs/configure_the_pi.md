@@ -105,7 +105,7 @@ You can also set this value to '3' to have a flipped vertical orientation.
 
 #### Disable screensaver and remove panel
 Edit the **/home/pi/.config/lxsession/LXDE-pi/autostart** file with `nano /home/pi/.config/lxsession/LXDE-pi/autostart`.
-* (RECCOMMENDED) To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver`. You'll also want to add the following lines to that same file
+* (RECOMMENDED) To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver`. You'll also want to add the following lines to that same file
 ```
 @xset s off
 @xset -dpms

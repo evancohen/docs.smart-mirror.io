@@ -7,7 +7,7 @@ You'll need to create a `config.js` file in the root of your smart-mirror direct
 cp config.example.js config.js
 ```
 
-Then fill out `config.js`. See below for links to get service keys and example values for config properties. You will have to obtain keys for Forcast.io, YouTube, SoundCloud. If you're using Fitbit you'll need a key for that as well. If you're using Hue Lights with this project you'll need to know the IP address of your Hue Hub and a username. Typically this is one of the areas things go awry. Please go through this slowly, and thoroughly. Please make sure there are commas between each section. Any issues or questions please join us on gitter chat
+Then fill out `config.js`. See below for links to get service keys and example values for config properties. You will have to obtain keys for Forcast.io, YouTube, SoundCloud. If you're using Fitbit you'll need a key for that as well. If you're using Hue Lights with this project you'll need to know the IP address of your Hue Hub and a username. Typically this is one of the areas things go awry. Please go through this slowly, and thoroughly. Please make sure there are commas between each section. Any issues or questions please join us on [gitter chat](https://gitter.im/evancohen/smart-mirror).
 
 It is **required** that you [train your own personal model for the keyword](#speech). By training your own model, you increase the samples available so a universal model can be created. Also, this solves many of the issues where the keyword is not detected.
 

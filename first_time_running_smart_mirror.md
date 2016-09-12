@@ -10,4 +10,4 @@ Note that if you start the mirror and get a white screen you most likely have an
 
 Have a different issue? Take a look at the [Troubleshooting Page](troubleshooting.md).
 
-Next Step (OPTIONAL): 
+Next Step (OPTIONAL): [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)

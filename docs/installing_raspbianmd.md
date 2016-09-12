@@ -26,5 +26,5 @@ cd ~
 git clone https://github.com/evancohen/smart-mirror.git
 ```
 
-Next Step: [Install Dependencies](docs/install_dependencies.md)
+Next Step: [Install Dependencies](install_dependencies.md)
 

@@ -5,6 +5,6 @@ Before we can run the thing we've got to install the projects dependencies. From
 npm install
 ```
 
-This will take a few minutes, it has to download [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt).
+This will take a few minutes, it has to download [electron-prebuilt](https://github.com/mafintosh/electron-prebuilt). Once it is complete please continue to configuring the smart-mirror.
 
 Next Step: [Configure the smart-mirror](configure_the_mirror.md)

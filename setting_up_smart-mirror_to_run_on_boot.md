@@ -17,3 +17,6 @@ Then, edit the file **```/home/pi/.config/lxsession/LXDE-pi/autostart```** and a
 /home/pi/smart-start.sh &
 ```
 Reboot the Pi and you should be good to go
+
+
+Have an issue? Take a look at the [Troubleshooting Page](troubleshooting.md).

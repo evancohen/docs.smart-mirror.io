@@ -8,7 +8,7 @@ sudo raspi-config
 And then choose "Expand root partition to fill SD card" option.
 
 #### Audio input and output
-If you run into issues configuring your audio see the [Troubleshooting your Microphone and Speech Recognition issues](troubleshooting.md#microphone_and_speech_recognition_issues) section. To configure your USB microphone and audio output you'll want to determine your playback and recording devices. 
+If you run into issues configuring your audio see the [Troubleshooting your Microphone and Speech Recognition issues](microphone_and_speech_recognition_issues.md) section. To configure your USB microphone and audio output you'll want to determine your playback and recording devices. 
 
 ``` bash
 $ aplay -l
@@ -105,13 +105,13 @@ You can also set this value to '3' to have a flipped vertical orientation.
 
 #### Disable screensaver and remove panel
 Edit the **/home/pi/.config/lxsession/LXDE-pi/autostart** file with `nano /home/pi/.config/lxsession/LXDE-pi/autostart`.
-* To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver`. You'll also want to add the following lines to that same file
+* (RECOMMENDED) To disable the screensaver you'll want to comment out (with a '#') the `@xscreensaver`. You'll also want to add the following lines to that same file
 ```
 @xset s off
 @xset -dpms
 @xset s noblank
 ```
-* To remove the panel at the top of the screen to comment out the `@lxpanel` lines 
+* (OPTIONAL) To remove the panel at the top of the screen to comment out the `@lxpanel` lines. If you want to be able to easily access the "menu" at the top of the screen do not do this step.
  
 
 #### Hide the mouse when inactive
@@ -119,31 +119,5 @@ Edit the **/home/pi/.config/lxsession/LXDE-pi/autostart** file with `nano /home/
 sudo apt-get install unclutter
 ```
 Then Add `unclutter -idle 0.1 -root` to **/etc/xdg/lxsession/LXDE-pi/autostart** with `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
- 
-#### Start the mirror on boot
-Optionally, you can configure your Pi to start the mirror on boot
-In **/home/pi/**, create the file called **smart-start.sh** via 
-```
-nano ~/smart-start.sh
-```
-with the following content:
-```
-#!/bin/bash
-export DISPLAY=:0
-export XAUTHORITY=/home/pi/.Xauthority
-cd /home/pi/smart-mirror && npm start
-```
 
-Make the file owned by the user pi
-```
-chown pi:pi /home/pi/smart-start.sh
-chmod +x /home/pi/smart-start.sh
-```
-
-Then, edit the file **/home/pi/.config/lxsession/LXDE-pi/autostart**
-and add the following line to the end:
-`/home/pi/smart-start.sh &`
-Reboot the Pi and you should be good to go
-
-
-Next step: [Install dependencies and run](install_dependencies_and_run.md)
+Next Step: [Configuring Chromium Speech Keys](chromium_speech_keys.md)

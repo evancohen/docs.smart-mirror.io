@@ -7,9 +7,10 @@ You'll need to create a `config.js` file in the root of your smart-mirror direct
 cp config.example.js config.js
 ```
 
-Then fill out `config.js`. See below for links to get service keys and example values for config properties.
+Then fill out `config.js`. See below for links to get service keys and example values for config properties. You will have to obtain keys for Forcast.io, YouTube, SoundCloud. If you're using Fitbit you'll need a key for that as well. If you're using Hue Lights with this project you'll need to know the IP address of your Hue Hub and a username. Typically this is one of the areas things go awry. Please go through this slowly, and thoroughly. Please make sure there are commas between each section. Any issues or questions please join us on [gitter chat](https://gitter.im/evancohen/smart-mirror).
 
-It is **highly recommended** that you [train your own personal model for the keyword](#speech). By training your own model, you increase the samples available so a universal model can be created. Also, this solves many of the issues where the keyword is not detected.
+It is **required** that you [train your own personal model for the keyword](#speech). By training your own model, you increase the samples available so a universal model can be created. Also, this solves many of the issues where the keyword is not detected.
+
 #### Index
 - [Language](#language)
 - [Speech](#speech)
@@ -24,7 +25,6 @@ It is **highly recommended** that you [train your own personal model for the key
 - [SoundCloud](#soundcloud)
 - [Traffic](#traffic)
 - [Fitbit](https://github.com/evancohen/smart-mirror/blob/master/Fitbit-README.md)
-- [Motion](#motion)
 
 
 ### Language
@@ -41,6 +41,12 @@ Specific locals can also be specified, for instance `"es-AR"` or `"es-BO"`. For 
 Training your own keyword will drastically increase the accuracy of keyword detection. This will be most accurate if you do this on your Pi using the microphone that you'll be using to trigger the mirror.
 
 **You can train your own model here**: https://snowboy.kitt.ai/hotword/47 
+
+**Ideally using this command works best:**
+```
+npm run train-model
+```
+> This command launches the snowboy site in embedded chromium.
 
 Once trained, download the model and save it to the root of the smart-mirror directory.
 
@@ -102,7 +108,7 @@ geoPosition: {
 ### Hue
 You'll need two things to set up your Philips Hue configuration, an `ip` and a `username`. You can find the instructions for this on the Philips Hue Documentation site in the [Getting Started](http://www.developers.meethue.com/documentation/getting-started) section (unfortunately you need to create an account to view this info).
 
-Optionally you can create groups (using the API for Philips Hue app) that you can control form the mirror by name. By default group `0` will control all the lights.
+Optionally you can create groups (using the API for Philips Hue app) that you can control from the mirror by name. By default group `0` will control all the lights.
 
 ``` javascript
 hue : {
@@ -204,7 +210,7 @@ traffic: {
 
 If any of your trips aren't showing up it's likely because Bing Maps can't find the address you specified. Using a full postal address should fix this issue.
 
-## Errors
-Note that if you start the mirror and get a white screen you most likely have an issue with your config. Often this is caused by a missing comma somewhere within the config. Use of an online javascript linter to help find common syntax errors. 
 
-Next Step: [Configure the Pi](configure_the_pi.md)
+Now that you've configured everything you're ready to run your Smart-Mirror for the first time.
+
+Next Step: [First Time Running Smart Mirror](first_time_running_smart_mirror.md)

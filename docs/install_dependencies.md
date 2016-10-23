@@ -2,7 +2,7 @@
 
 You'll need to install the following in order to run the keyword spotter and have the mirror listen to you:
 ```
-sudo apt-get install sox
+sudo apt-get install sox libatlas-base-dev
 ```
 
 Before we can run the thing we've got to install the projects dependencies. From the root of the `smart-mirror` directory run:

@@ -85,5 +85,11 @@ pcm.!default {
    }
 }
 ```
-
-> #### Note that this requires a reboot to take effect.
+**Note**: In order to push audio through the headphone jack, setting `hw:0,0` is not enough. You must also run:
+``` bash
+amixer cset numid=3 1
+```
+To force the audio back through HDMI you can run:
+``` bash
+amixer cset numid=3 2
+```

@@ -12,6 +12,7 @@ If you've done these and are still having issues I would recommend running `npm 
 
 ### If saying "smart mirror" does nothing:
 There is likely an issue with the keyword spotter. You can run it from the `smart-mirror` directory with
+
 ``` bash
 node sonus.js smart_mirror.pmdl en-US 0.5
 ```

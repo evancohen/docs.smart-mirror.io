@@ -14,7 +14,7 @@ If you've done these and are still having issues I would recommend running `npm 
 There is likely an issue with the keyword spotter. You can run it from the `smart-mirror` directory with
 
 ``` bash
-node sonus.js smart_mirror.pmdl en-US 0.5
+node sonus.js ./keyfile.json smart_mirror.pmdl en-US 0.5
 ```
 If *that* doesn't work and you've installed all dependencies then the spotter may not be recognizing your voice. You can train the model on your pi on the latest `dev` branch by running `npm run train-model`. More info in #330.
 

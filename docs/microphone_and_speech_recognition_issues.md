@@ -1,5 +1,8 @@
 # Microphone and Speech Recognition issues
 
+># `WARNING: This is out of date.`
+#####It will be updated soon :)
+
 Most of these issues can be fixed by following the following:
 
 1. Have you [installed all necessary dependencies](install_dependencies.md)?

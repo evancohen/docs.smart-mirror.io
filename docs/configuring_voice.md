@@ -19,21 +19,6 @@ When prompted to create a new service account select "Project Owner"
 
 Keep this information for later. You'll need your projectID and keyfile to [configure the smart mirror](configure_the_mirror.md#speech).
 
-## Train your own Keyword
-Training your own keyword will drastically increase the accuracy of keyword detection. This will be most accurate if you do this on your Pi using the microphone that you'll be using to trigger the mirror.
-
-**From the smart mirror directory run:**
-```
-npm run train-model
-```
-> This command launches the snowboy site in embedded chromium.
->   
-**Note**: there is currently a snowboy bug that requires you to click the logo in the top left, login, close the window, and re-run the command
-
-**Or, you can train your model here:** https://snowboy.kitt.ai/hotword/47 
-
-Once trained, download the model and save it to the root of the smart-mirror directory.
-
 ## Audio input and output
 If you run into issues configuring your audio see the [Troubleshooting your Microphone and Speech Recognition issues](microphone_and_speech_recognition_issues.md) section. To configure your USB microphone and audio output you'll want to determine your playback and recording devices. 
 
@@ -93,3 +78,18 @@ To force the audio back through HDMI you can run:
 ``` bash
 amixer cset numid=3 2
 ```
+
+## Train your own Keyword
+Training your own keyword will drastically increase the accuracy of keyword detection. This will be most accurate if you do this on your Pi using the microphone that you'll be using to trigger the mirror.
+
+**From the smart mirror directory run:**
+```
+npm run train-model
+```
+> This command launches the snowboy site in embedded chromium.
+>   
+**Note**: there is currently a snowboy bug that requires you to click the logo in the top left, login, close the window, and re-run the command
+
+**Or, you can train your model here:** https://snowboy.kitt.ai/hotword/47 
+
+Once trained, download the model and save it to the root of the smart-mirror directory.

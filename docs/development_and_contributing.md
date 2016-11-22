@@ -50,13 +50,13 @@ The process is straight-forward.
    Since speech query limitations have becoming a limeting factor of development I've created a shim for Annyang to "simulate" speech to test the mirror. In the dev console try some of these examples:
 ``` javascript
 // Play YouTube video
-annyang.simulate("show me how to tie a bowtie");
+annyang.trigger("show me how to tie a bowtie");
 
 // Play a song on SoundCloud
-annyang.simulate("SoundCloud play Kero One so seductive");
+annyang.trigger("SoundCloud play Kero One so seductive");
 
 // Display a map
-annyang.simulate("show me a map of Seattle Washington");
+annyang.trigger("show me a map of Seattle Washington");
 ```
 
 #### Dev Environment

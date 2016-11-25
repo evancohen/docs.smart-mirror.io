@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Hardware](docs/hardware.md)
 * [Installation](docs/installation.md)
-   * [Install Raspbian](docs/installing_raspbianmd.md)
+   * [Install Raspbian](docs/installing_raspbian.md)
    * [Install dependencies](docs/install_dependencies.md)
 * [Configuration](docs/configuration.md)
    * [Configure the Pi](docs/configure_the_pi.md)

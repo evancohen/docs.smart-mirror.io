@@ -1,5 +1,8 @@
 # How To Obtain Chromium Speech Keys
 
+># `WARNING: This is no longer required`
+#####It is being kept here for legacy resons
+
 ##Enabling API Libraries
 
 

@@ -41,8 +41,8 @@ Specific locals can also be specified, for instance `"es-AR"` or `"es-BO"`. For 
 The speech config object has the following properties:
 - `projectId` - The project ID from your Cloud Platform Project
 - `keyFilename` - The location of your JSON keyfile for 
-- `keyword` - The text of the keyword that you are using to trigger the mirror. This should be "Smart Mirror"
-- `model` - The filename for your model (should not include spaces)
+- `keyword` - The text of the keyword that you are using to trigger the mirror. This should be "Smart Mirror". Additional Keywords can be entered by creating an array for example `["Smart Mirror", "Snowboy"]`. If you specify multiple keywords you **MUST** specify multiple models.
+- `model` - The filename for your model (should not include spaces). Additional models can be entered by creating an array for example `["smart_mirror.pmdl", "snowboy.pmdl"]`. If you specify multiple models you **MUST** specify multiple Keywords.
 - `sensitivity` - Sensitivity for the keyword spotter. If you are getting too many false positives or are having trouble detecting you can change this value.
 
 ### Layout

@@ -28,6 +28,15 @@ Please file an issue [on GitHub](https://github.com/evancohen/smart-mirror/issue
 > #### This project is a step by step process. For successful installation and configuration you must follow it step by step. If you skip a step that seems insignificant it can cause a catastrophic error down the line. Often when troubleshooting in the [gitter chat](https://gitter.im/evancohen/smart-mirror) we determine that a step was missed. 
 > #### Having said that we don't mind, nearly everyone on [gitter chat](https://gitter.im/evancohen/smart-mirror) that has a working install has skipped a step and gone back and fixed it. We're here to help. Following the documentation step by step will greatly reduce your level of frustration while getting started on this project.
 
+##Language Translation
+
+If English isn't your first language, you can translate this site.
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 ### Supported Platforms
 The smart-mirror is fully compatible with the following operating systems. Note that a small number of features require GPIO, devices without this will not be able to take advantage of these features.

@@ -44,7 +44,7 @@ The following languages are fully supported:
 
 Specific locales can also be specified, by replacing the `XX` above with the country code.
 
-For instance `en-US` for English (United States), `es-AR` for Spanish (Argentina), or `es-BO` for Spanish (Bolivia). For more details about supported speech detection languages see this [Stack**Overflow**](http://stackoverflow.com/questions/14257598/what-are-language-codes-for-voice-recognition-languages-in-chromes-implementati/14302134#14302134) post.
+For instance `en-US` for English (United States), `es-AR` for Spanish (Argentina), or `es-BO` for Spanish (Bolivia). For more details about supported speech detection languages see this [Google Cloud Platform Speech API](https://cloud.google.com/speech/docs/languages) page.
 
 ### Speech
 The speech config object has the following properties:

@@ -28,15 +28,17 @@ It is **required** that you [train your own personal model for the keyword](#spe
 
 ### Language
 The following languages are fully supported:
- - `"en-US"` - English
- - `"de-DE"` - German
- - `"es-ES"` - Spanish
- - `"fr-FR"` - French
- - `"ko-KO"` - Korean
- - `"pt-BR"` - Portuguese (Brazil)
- - `"pt-PT"` - Portuguese (Portugal)
+ - `en-XX` - English
+ - `de-XX` - German
+ - `es-XX` - Spanish
+ - `fr-XX` - French
+ - `ko-XX` - Korean
+ - `pt-XX` - Portuguese
 
-Specific locals can also be specified, for instance `"es-AR"` or `"es-BO"`. For more details about supported speech detection languages see this [Stack**Overflow**](http://stackoverflow.com/questions/14257598/what-are-language-codes-for-voice-recognition-languages-in-chromes-implementati/14302134#14302134) post.
+
+Specific locales can also be specified, by replacing the `XX` above with the country code.
+
+For instance `en-US` for English (United States), `es-AR` for Spanish (Argentina), or `es-BO` for Spanish (Bolivia). For more details about supported speech detection languages see this [Stack**Overflow**](http://stackoverflow.com/questions/14257598/what-are-language-codes-for-voice-recognition-languages-in-chromes-implementati/14302134#14302134) post.
 
 ### Speech
 The speech config object has the following properties:

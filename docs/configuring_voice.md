@@ -38,3 +38,6 @@ npm run train-model
 **Or, you can train your model here:** https://snowboy.kitt.ai/hotword/47 
 
 Once trained, download the model and save it to the root of the smart-mirror directory.
+
+
+Next Step: [Run The Mirror For the First Time](/first_time_running_smart_mirror.md)

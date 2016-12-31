@@ -80,3 +80,4 @@ To force the audio back through HDMI you can run:
 amixer cset numid=3 2
 ```
 
+Next Step: [Configuring Voice](configuring_voice.md)

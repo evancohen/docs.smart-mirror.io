@@ -1,8 +1,14 @@
 # Configure the smart-mirror
+The smart-mirror is configured using the Remote Configuration Tool. This requires you starting the mirror.
 
-The smart-mirror is configured using the Remote Configuration Tool.
+Open the terminal and type:
+```
+npm start
+```
 
-If you're running the mirror for the first time you'll see a QR Code with a URL under it. From a phone or another computer, on the same network as your Smart-Mirror, you can open a browser and manually enter the URL.
+If you're running the mirror for the first time (or for the first time since running upgrading to this version of the mirror) you'll see a QR Code with a URL under it. From a phone or another computer (on the same network as your Smart-Mirror) you can open a browser and manually enter the URL. If you're not running the mirror for the first time and you've properly configured the Sound and Voice, say the keyword/hotword and then "Show Remote Link" to display the URL to reach the Remote Configuration Tool.
+
+After going to the Home page click on Settings > Configure the Mirror.
 
 See below for links to get service keys and example values for config properties. You will have to obtain keys for Forcast.io, YouTube, SoundCloud. If you're using Fitbit you'll need a key for that as well. If you're using Hue Lights with this project you'll need to know the IP address of your Hue Hub and a username. Please go through this slowly, and thoroughly. 
 
@@ -116,4 +122,4 @@ If any of your trips aren't showing up it's likely because Bing Maps can't find 
 
 Now that you've configured everything you're ready to save your configuration by clicking save. This will restart the Smart-Mirror.
 
-Next Step: [First Time Running Smart Mirror](first_time_running_smart_mirror.md)
+Next Step (OPTIONAL): [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)

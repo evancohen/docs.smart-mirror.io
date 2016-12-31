@@ -1,3 +1,14 @@
+<h1 align="center">Smart Mirror</h1>
+
+<p align="center">
+<a href="https://discord.gg/JDnHaZH"><img src="https://discordapp.com/api/guilds/258802311298547713/widget.png" alt="Discord Chat"/></a>
+<a href="https://waffle.io/evancohen/smart-mirror"><img src="https://img.shields.io/waffle/label/evancohen/smart-mirror/in%20progress.svg" alt="Stories in progress" /></a>
+<a href='https://dependencyci.com/github/evancohen/smart-mirror'><img src='https://dependencyci.com/github/evancohen/smart-mirror/badge' alt='Dependency Status'/></a>
+</p>
+<p align="center">
+A voice controlled life automation hub, most commonly powered by the Raspberry Pi.
+</p>
+
 # Introduction
 
 This is the official documentation for the [smart-mirror](https://github.com/evancohen/smart-mirror). If you are reading this on [docs.smart-mirror.io](http://docs.smart-mirror.io), great! If not you should head on over.
@@ -10,10 +21,11 @@ Smart-mirror is voice controlled, integrates with a growing number of services, 
 {% youtube %}
 https://www.youtube.com/watch?v=PDIbhV8Nvq8
 {% endyoutube %}
+> Note: The current video demonstrations do not display the mirror in its current state. Such as keyword spotting and remote configuration.
 
 Starting from scratch? No problem. Head on over to the [Hardware](docs/hardware.md) section to get started.
 
-If you encounter problems along the way check out the [Troubleshooting](docs/troubleshooting.md) section or join us in the [gitter chat](https://gitter.im/evancohen/smart-mirror).
+If you encounter problems along the way check out the [Troubleshooting](docs/troubleshooting.md) section or join us in the [discord chat](https://discord.gg/JDnHaZH).
 
 Please file any issues or bugs [on GitHub](https://github.com/evancohen/smart-mirror/issues/new).
 
@@ -26,7 +38,8 @@ Issues and concerns with the documentation?
 Please file an issue [on GitHub](https://github.com/evancohen/smart-mirror/issues/new). Commenting in line can cause readability issues for others. It is also difficult for anyone other than Evan Cohen to address or remove after resolving the documentation.
 
 > #### This project is a step by step process. For successful installation and configuration you must follow it step by step. If you skip a step that seems insignificant it can cause a catastrophic error down the line. Often when troubleshooting in the [gitter chat](https://gitter.im/evancohen/smart-mirror) we determine that a step was missed. 
-> #### Having said that we don't mind, nearly everyone on [gitter chat](https://gitter.im/evancohen/smart-mirror) that has a working install has skipped a step and gone back and fixed it. We're here to help. Following the documentation step by step will greatly reduce your level of frustration while getting started on this project.
+![](docs/mirrorBoom.jpg)
+> #### Having said that we don't mind, nearly everyone on [discord chat](https://discord.gg/JDnHaZH) that has a working install has skipped a step and gone back and fixed it. We're here to help. Following the documentation step by step will greatly reduce your level of frustration while getting started on this project.
 
 
 ### Supported Platforms

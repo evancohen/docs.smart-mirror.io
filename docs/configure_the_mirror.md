@@ -63,41 +63,16 @@ Select `By Time of Day` for "How would you like greetings displayed?" and enter 
 You'll need a forecast.io developer key, which you can obtain from: https://developer.forecast.io
 
 - `API Key` - After Creating an account you can find your key at the bottom of the page. It should look something like this: `vy2u1t34bo123bu41234yduv1234tb`. Enter this in the `key` field under `Forecast.io API Settings` 
-
 - `Units` - It should be ok to leave the `units` set as auto because the units that are used are determined by your location. If you would like to use other units you can look the [forecast.io documentation](https://developer.forecast.io/docs/v2#options) for more info.
-
 - `Refresh Interval (minutes)` - This is how often you would like the Weather to update in minutes.
 
 ### Geolocation
-This is an **optional** setting and is only for people who are having issues with the smart-mirror's built in geolocation. You can override your latitude and longitude by specifying the following:
-``` javascript
-geoPosition: {
-    latitude: 78.23423423,
-    longitude: 13.123124142
-}
-```
+This is an **optional** setting and is only for people who are having issues with the smart-mirror's built in geolocation. You can override your latitude and longitude by entering them here.
 
 ### Hue
 You'll need two things to set up your Philips Hue configuration, an `ip` and a `username`. You can find the instructions for this on the Philips Hue Documentation site in the [Getting Started](http://www.developers.meethue.com/documentation/getting-started) section (unfortunately you need to create an account to view this info).
 
 Optionally you can create groups (using the API for Philips Hue app) that you can control from the mirror by name. By default group `0` will control all the lights.
-
-``` javascript
-hue : {
-    ip : "192.168.1.1",
-    uername : "",
-    groups : [{
-        id : 0,
-        name : "all"
-    }, {
-        id : 1,
-        name : "bedroom"
-    }, {
-        id : 2,
-        name : "kitchen"
-    }]
-}
-```
 
 ### Calendar
 You can have the mirror display your iCal's from Google Calendar, Outlook, iCloud, and more by adding them to the `icals` array.
@@ -106,41 +81,18 @@ There are two other properties:
 - `maxResults`: Maximum number of upcoming calender events to display.
 - `maxDays`: Maximum number of days to look into the future when listing upcoming events.
 
-``` javascript
-calendar: {
-    icals : ["https://calendar.google.com/calendar/ical/SOMESTUFF/basic.ics",
-"https://outlook.office365.com/owa/calendar/SOMESTUFF/reachcalendar.ics"],
-    maxResults: 9, 
-    maxDays: 365 
-}
-```
-
 ### Giphy
-If you want to display gifs on your mirror you can do that too! In the [Giphy Beta API](https://github.com/Giphy/GiphyAPI) the key is fixed:
-
-``` javascript
-giphy: {
-    key : "dc6zaTOxFJmzC"
-}
-```
+If you want to display gifs on your mirror you can do that too! In the [Giphy Beta API](https://github.com/Giphy/GiphyAPI) the key is fixed `dc6zaTOxFJmzC`
 
 ### YouTube
 You can find instructions for getting YouTube API Keys here: https://developers.google.com/youtube/v3/getting-started#before-you-start
 
-``` javascript
-youtube: {
-    key : "vy2u1t34bo123bu41234yduv1234tb"
-}
-```
+The key will look similiar to this: `vy2u1t34bo123bu41234yduv1234tb`
 
 ### SoundCloud
 SoundCloud API keys can be obtained from your app profile (this requires an account): http://soundcloud.com/you/apps
 
-``` javascript
-soundcloud: {
-    key : "vy2u1t34bo123bu41234yduv1234tb"
-}
-```
+The key will look similiar to this: `vy2u1t34bo123bu41234yduv1234tb`
 
 ### Traffic
 Using your key from the [Bing Maps Portal](https://www.bingmapsportal.com/Application) you can specify an array of `trips` and a `reload_interval` (how often should the mirror refresh trip data, in minutes).
@@ -153,36 +105,12 @@ A trip has the following properties:
 -  `origin` - The address for the start of your trip
 -  `destination` - The address for the destination of your trip
 -  `name` - Human readable name for the destination
-
-
-``` javascript
-traffic: {
-  key : "9kjn22lk25h0qergp34v0u9n2352437823b76823498243245",
-  reload_interval : 5,
-  trips : [{
-    mode : "Walking",
-    origin : "56 Leamington Street, Sheffield, S10 1LW",
-    destination : "Claremount Cres, Sheffield, S10 2TA",
-    name : "uni"
-  },
-  {
-    mode : "Transit",
-    origin : "128 24th Ave E, Seattle",
-    destination : "700 Bellevue Way NE, Bellevue",
-    name : "work"
-  },
-  {
-    mode : "Driving",
-    origin : "138 24th Ave E, Seattle", 
-    destination : "700 Bellevue Way NE, Bellevue",
-    name : "work"
-  }]
-}
-```
+-  `startTime` - Time to start displaying on Smart Mirror. (optional: leave blank to always display) 
+-  `endTime` - Time to end displaying on Smart Mirror. (optional: leave blank to always display) 
 
 If any of your trips aren't showing up it's likely because Bing Maps can't find the address you specified. Using a full postal address should fix this issue.
 
 
-Now that you've configured everything you're ready to run your Smart-Mirror for the first time.
+Now that you've configured everything you're ready to save your configuration by clicking save. This will restart the Smart-Mirror.
 
 Next Step: [First Time Running Smart Mirror](first_time_running_smart_mirror.md)

@@ -1,15 +1,14 @@
 # Configure the smart-mirror
 
-The smart-mirror relies on a configuration file to determine what data to display. 
+The smart-mirror is configured using the Remote Configuration Tool.
 
-You'll need to create a `config.js` file in the root of your smart-mirror directory. Also in this directory is a configuration template called `config.example.js`. Copy the template and save it as `config.js`.
-```
-cp config.example.js config.js
-```
+If you're running the mirror for the first time you'll see a QR Code with a URL under it. From a phone or another computer, on the same network as your Smart-Mirror, you can open a browser and manually enter the URL.
 
-Then fill out `config.js`. See below for links to get service keys and example values for config properties. You will have to obtain keys for Forcast.io, YouTube, SoundCloud. If you're using Fitbit you'll need a key for that as well. If you're using Hue Lights with this project you'll need to know the IP address of your Hue Hub and a username. Typically this is one of the areas things go awry. Please go through this slowly, and thoroughly. Please make sure there are commas between each section. Any issues or questions please join us on [gitter chat](https://gitter.im/evancohen/smart-mirror).
+See below for links to get service keys and example values for config properties. You will have to obtain keys for Forcast.io, YouTube, SoundCloud. If you're using Fitbit you'll need a key for that as well. If you're using Hue Lights with this project you'll need to know the IP address of your Hue Hub and a username. Please go through this slowly, and thoroughly. 
 
-It is **required** that you [train your own personal model for the keyword](#speech). By training your own model, you increase the samples available so a universal model can be created. Also, this solves many of the issues where the keyword is not detected.
+Any issues or questions please join us on [discord chat](https://discord.gg/JDnHaZH).
+
+It is **required** that you [train your own personal model for the keyword](#speech). By training your own model, you increase the samples available so a universal model can be created. Also, this solves many of the issues where the keyword is not detected, as well as false positives.
 
 #### Index
 - [Language](#language)
@@ -24,7 +23,7 @@ It is **required** that you [train your own personal model for the keyword](#spe
 - [YouTube](#youtube)
 - [SoundCloud](#soundcloud)
 - [Traffic](#traffic)
-- [Fitbit](https://github.com/evancohen/smart-mirror/blob/master/Fitbit-README.md)
+- [Fitbit](https://github.com/evancohen/smart-mirror/blob/master/Fitbit-README.md) _(See issue [#350](https://github.com/evancohen/smart-mirror/issues/350) before attempting configuration for fitbit)_
 
 
 ### Language
@@ -34,16 +33,16 @@ The following languages are fully supported:
  - `"es-ES"` - Spanish
  - `"fr-FR"` - French
  - `"ko-KO"` - Korean
+ - `"pt-pt"` - pt
 
 Specific locals can also be specified, for instance `"es-AR"` or `"es-BO"`. For more details about supported speech detection languages see this [Stack**Overflow**](http://stackoverflow.com/questions/14257598/what-are-language-codes-for-voice-recognition-languages-in-chromes-implementati/14302134#14302134) post.
 
 ### Speech
 The speech config object has the following properties:
-- `projectId` - The project ID from your Cloud Platform Project
 - `keyFilename` - The location of your JSON keyfile for 
-- `keyword` - The text of the keyword that you are using to trigger the mirror. This should be "Smart Mirror". Additional Keywords can be entered by creating an array for example `["Smart Mirror", "Snowboy"]`. If you specify multiple keywords you **MUST** specify multiple models.
-- `model` - The filename for your model (should not include spaces). Additional models can be entered by creating an array for example `["smart_mirror.pmdl", "snowboy.pmdl"]`. If you specify multiple models you **MUST** specify multiple Keywords.
-- `sensitivity` - Sensitivity for the keyword spotter. If you are getting too many false positives or are having trouble detecting you can change this value.
+- `keyword` - The text of the keyword that you are using to trigger the mirror. This should be "Smart Mirror". Additional Keywords can be entered by clicking the `+` sign.
+- `model` - The filename for your model (should not include spaces). Additional models can be entered by clicking the `+` sign.
+- `sensitivity` - Sensitivity for the keyword spotter. This value is between 0 and 1. If you are getting too many false positives or are having trouble detecting you can change this value.
 
 ### Layout
 You can set these values to be `"main"` (recommended) or `"icesnow"`.
@@ -52,36 +51,22 @@ You can set these values to be `"main"` (recommended) or `"icesnow"`.
 `greeting` can either be an array of greetings to randomly select from OR it can be an object that specifies multiple arrays to choose from based on the time of day.
 
 ###### Disable Greeting
-You can disable the greeting by setting it to an array with an empty string:
-``` javascript
-greeting: [""]
-```
-###### Randomly Selected Greeting
+You can disable the greeting by selecting `Randomly All Day` for "How would you like greetings displayed?" and then clicking `-` sign to remove any values listed.
 
-``` javascript
-greeting : ["Hi, sexy!", "Hey There!", "Looking Awesome!"]
-```
+###### Randomly Selected Greeting
+Select `Randomly All Day` for "How would you like greetings displayed?" and enter as many greetings as you would like by pressing the `+` sign. You can also click on a tab to rearrange the order. Lastly you can click the `-` sign to remove the greeting on the bottom.
+
 ###### Randomly Selected Greeting Based On The Time Of Day
-``` javascript
-greeting : {
-    night:    ["Goodnight", "Time to sleep"],
-    morning:  ["Good Morning"],
-    midday:   ["Good Afternoon"],
-    evening:  ["Good evening"]
-}
-```
+Select `By Time of Day` for "How would you like greetings displayed?" and enter as many greetings as you would like for each time of day (Morning, Midday, Evening, and Night) by pressing the `+` sign under each heading. You can also click on a tab to rearrange the order. Lastly you can click the `-` sign to remove the greeting on the bottom.
+
 ### Forecast
 You'll need a forecast.io developer key, which you can obtain from: https://developer.forecast.io
 
-After Creating an account you can find your key at the bottom of the page. In your config it should look something like this:
+- `API Key` - After Creating an account you can find your key at the bottom of the page. It should look something like this: `vy2u1t34bo123bu41234yduv1234tb`. Enter this in the `key` field under `Forecast.io API Settings` 
 
-``` javascript
-forecast : {
-    key : "vy2u1t34bo123bu41234yduv1234tb", // Your forecast.io api key
-    units : "auto" // See forecast.io documentation if you are getting the wrong units
-}
-```
-It should be ok to leave the units set as auto because the units that are used are determined by your location. If you would like to use other units you can look the [forecast.io documentation](https://developer.forecast.io/docs/v2#options) for more info.
+- `Units` - It should be ok to leave the `units` set as auto because the units that are used are determined by your location. If you would like to use other units you can look the [forecast.io documentation](https://developer.forecast.io/docs/v2#options) for more info.
+
+- `Refresh Interval (minutes)` - This is how often you would like the Weather to update in minutes.
 
 ### Geolocation
 This is an **optional** setting and is only for people who are having issues with the smart-mirror's built in geolocation. You can override your latitude and longitude by specifying the following:

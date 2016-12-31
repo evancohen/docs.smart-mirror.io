@@ -33,7 +33,8 @@ The following languages are fully supported:
  - `"es-ES"` - Spanish
  - `"fr-FR"` - French
  - `"ko-KO"` - Korean
- - `"pt-pt"` - pt
+ - `"pt-BR"` - Portuguese (Brazil)
+ - `"pt-PT"` - Portuguese (Portugal)
 
 Specific locals can also be specified, for instance `"es-AR"` or `"es-BO"`. For more details about supported speech detection languages see this [Stack**Overflow**](http://stackoverflow.com/questions/14257598/what-are-language-codes-for-voice-recognition-languages-in-chromes-implementati/14302134#14302134) post.
 

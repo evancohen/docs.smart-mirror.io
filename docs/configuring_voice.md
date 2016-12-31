@@ -1,5 +1,9 @@
 # Configuring Voice
 
+![](/docs/stop.png)
+
+## IF YOU HAVE NOT CONFIGURED SOUND DO THAT PRIOR TO CONFIGURING SPEECH
+
 > If you have trouble setting up speech recognition try heading over to the [troubleshooting section](troubleshooting.md). If that doesn't work drop into the [discord chat](https://discord.gg/JDnHaZH).
 
 ## Setting up Speech Recognition

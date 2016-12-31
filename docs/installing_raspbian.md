@@ -5,7 +5,7 @@
 To get started I suggest a clean install of Raspbian. You can snag a fresh copy of Jessie (recommended, it's the future) or Wheezy from the [Raspbian Download Page](https://www.raspberrypi.org/downloads/raspbian/).
 Make sure to download the **Full desktop image**. Do not use NOOBS to install Raspbian. 
 
-For instructions on how to install Raspbian see [How To Install Raspbian(full)](docs/howto/how_to_install_raspbianfull.md).
+For instructions on how to install Raspbian see [How To Install Raspbian(full)](/docs/howto/how_to_install_raspbianfull.md).
 
 You'll also need to install Node (v6.x) which now comes bundled with npm.
 ```

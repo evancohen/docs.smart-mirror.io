@@ -6,7 +6,7 @@ There are two ways to configure audio:
 - [Use a script](#Scripted_Audio_Configuration)
 - [Manually configure audio](#Scripted_Audio_Configuration)
 
-## Scripted Audio Configuration
+### Scripted Audio Configuration
 
 Running this script makes configuration easier but you must not enter invalid input. Entering invalid input will make the script fail currently with little to no indication that it has failed. Having said that, if you have a numpad on your keyboard do not use that to enter your input. use the numbers above the qwerty keyboard. 
 ```
@@ -17,7 +17,7 @@ Now with the remote configuration. We should be able to implement audio configur
 
 Afterwards, you will need to do [this.](#Final_Configuration_Step_Regardless_of_Scripted_or_Manual_Configuration_Above)
 
-## Manual Audio input and output Configuration
+### Manual Audio input and output Configuration
 If you run into issues configuring your audio see the [Troubleshooting your Microphone and Speech Recognition issues](microphone_and_speech_recognition_issues.md) section. To configure your USB microphone and audio output you'll want to determine your playback and recording devices. 
 
 First, you'll want to check the available playback devices

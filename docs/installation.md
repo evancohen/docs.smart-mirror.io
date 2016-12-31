@@ -11,7 +11,7 @@ Once that script finishes running (~15 minutes on a standard connection) you'll 
 Something went wrong with the install?  
 Want to do things the old fashioned way?  
 
-That's OK. That's why there are manuall installation instructions:
+That's OK. That's why there are manual installation instructions:
 
    * [Install Raspbian](installing_raspbian.md)
    * [Install dependencies and run](install_dependencies.md)

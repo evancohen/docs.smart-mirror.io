@@ -41,6 +41,14 @@ Please file an issue [on GitHub](https://github.com/evancohen/smart-mirror/issue
 ![](/docs/mirrorBoom.jpg)
 > #### Having said that we don't mind, nearly everyone on [discord chat](https://discord.gg/JDnHaZH) that has a working install has skipped a step and gone back and fixed it. We're here to help. Following the documentation step by step will greatly reduce your level of frustration while getting started on this project.
 
+##language Translation
+
+If English isn't your first language, you can translate this site.
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 ### Supported Platforms
 The smart-mirror is fully compatible with the following operating systems. Note that a small number of features require GPIO, devices without this will not be able to take advantage of these features.

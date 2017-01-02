@@ -1,8 +1,5 @@
 # Development and Contributing
-![](/docs/stop.png)
-># `WARNING: This is not complete.`
-#####It will be updated soon :)
-
+># `NOTE: This is a work in progress.`
 
 ##### Development
  See the `dev` branch for features that are actively in development.
@@ -25,24 +22,28 @@ The process is straight-forward.
 
 ### Project Structure
  The smart mirror is an [Electron](electron.atom.io) app, which means it leverages Chromium, Node, and the V8 JavaScript engine to host and render the mirror.
+
+#### [app/](https://github.com/evancohen/smart-mirror/tree/master/app)
+ The app directory contains the core of the smart-mirror: 
+ - **`js/`** core js of the smart mirror (bootstrapping angular, etc) 
+ - **`css/`** all of the smart mirror styles
+ - **`locales/`** all of the localized speech commands (more on this later)
+ - **`fonts/`** nobody knows what this folder does, but it's somehow necessary ;)
  
-#### [config.example.js](https://github.com/evancohen/smart-mirror/blob/master/config.example.js)
-  While not ever actually included in the mirror, `config.example.js` serves as a config template for users to base their own `config.js` file on. In general these values are optional (but there is some inconsistency in the way this works today).
+#### [plugins/](https://github.com/evancohen/smart-mirror/tree/master/plugins)
+The plugins directory contains all of the plugins included in the smart mirror. A plugin consists of an optional combination of the following:
+- **`config.schema.json`** defines the configuration schema for your plugin. You can look at example schema and test your own at https://smart-mirror.io/playground/
+- **`index.html`** the html partial for your plugin. This must be added to the main [index.html](https://github.com/evancohen/smart-mirror/blob/master/index.html) to determine where it will be rendered.
+- **`controller.js`** All of the angular controller logic (data binding) for your plugin. This must be manually included in a script tag in the main [index.html](https://github.com/evancohen/smart-mirror/blob/master/index.html). It is acceptable to write *Node* here.
+- **`service.js`** should your plugin need an angular service you can manually included in a script tag in the main [index.html](https://github.com/evancohen/smart-mirror/blob/master/index.html).
 
-#### [js/](https://github.com/evancohen/smart-mirror/tree/master/js)
- The `js` directory contains the core of the smart-mirror: 
- - `app.js` manually bootstraps Angular 
- - `controller.js` controls all the data binding, voice command registration, and service injection for the mirror.
+#### [remote/](https://github.com/evancohen/smart-mirror/tree/master/remote)
+The remote directory contains the code that powers the client configuration page(s). The "server" side code can be found in [`remote.js`](https://github.com/evancohen/smart-mirror/blob/master/remote.js).
 
-#### [js/services/](https://github.com/evancohen/smart-mirror/tree/master/js/services)
- The `services` directory is home to all the service integration logic for the mirror. Each file in this directory does the heavy lifting for it's respective service and serves as an interface between the mirror and that service.
- 
- Services adhere to [Promise-Based Archetecture](http://blog.rangle.io/the-art-of-promise-based-architecture/) and should avoid containing long-running functions. 
-
-#### [locales/](https://github.com/evancohen/smart-mirror/tree/master/locales)
+#### [app/locales/](https://github.com/evancohen/smart-mirror/tree/master/locales)
  Within this directory you will find all the `JSON` localization files for the mirror. The mirror uses [i18n](https://angular-translate.github.io/) to `$translate` strings rendered in the mirror (examples of this in `index.html` and `config.js`).
  
- When making changes to these files make sure that you add string keys to all localization files, not just to the one that you speek.
+ When making changes to these files make sure that you add string keys to all localization files, not just to the one that you speak.
  
  #### [scripts/](https://github.com/evancohen/smart-mirror/tree/master/scripts)
   Contains various help scripts. There aren't a ton today and they will expand over time.

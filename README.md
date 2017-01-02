@@ -1,7 +1,7 @@
 <h1 align="center">Smart Mirror</h1>
 
 <p align="center">
-<a href="https://discord.gg/JDnHaZH"><img src="https://discordapp.com/api/guilds/258802311298547713/widget.png" alt="Discord Chat"/></a>
+<a href="https://discord.gg/EMb4ynW"><img src="https://discordapp.com/api/guilds/258802311298547713/widget.png" alt="Discord Chat"/></a>
 <a href="https://waffle.io/evancohen/smart-mirror"><img src="https://img.shields.io/waffle/label/evancohen/smart-mirror/in%20progress.svg" alt="Stories in progress" /></a>
 <a href='https://dependencyci.com/github/evancohen/smart-mirror'><img src='https://dependencyci.com/github/evancohen/smart-mirror/badge' alt='Dependency Status'/></a>
 </p>
@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=PDIbhV8Nvq8
 
 Starting from scratch? No problem. Head on over to the [Hardware](docs/hardware.md) section to get started.
 
-If you encounter problems along the way check out the [Troubleshooting](docs/troubleshooting.md) section or join us in the [discord chat](https://discord.gg/JDnHaZH).
+If you encounter problems along the way check out the [Troubleshooting](docs/troubleshooting.md) section or join us in the [discord chat](https://discord.gg/EMb4ynW).
 
 Please file any issues or bugs [on GitHub](https://github.com/evancohen/smart-mirror/issues/new).
 

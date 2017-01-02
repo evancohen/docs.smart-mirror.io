@@ -41,7 +41,6 @@ The following languages are fully supported:
  - `ko-XX` - Korean
  - `pt-XX` - Portuguese
 
-
 Specific locales can also be specified, by replacing the `XX` above with the country code.
 
 For instance `en-US` for English (United States), `es-AR` for Spanish (Argentina), or `es-BO` for Spanish (Bolivia). For more details about supported speech detection languages see this [Google Cloud Platform Speech API](https://cloud.google.com/speech/docs/languages) page.

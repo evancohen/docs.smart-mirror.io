@@ -1,18 +1,16 @@
 # Development and Contributing
 ># `NOTE: This is a work in progress.`
 
-##### Development
- See the `dev` branch for features that are actively in development.
-If you would like to contribute please follow the [contribution guidelines](https://github.com/evancohen/smart-mirror/blob/master/CONTRIBUTING.md).
-To launch the mirror with a debug window attached use the following command:
-```
-npm start dev
-```
 
 You can keep up with development on http://waffle.io/evancohen/smart-mirror
 
-##### Contributing
- Everybody is invited and welcome to contribute to smart-mirror. There is a lot to do... If you are not a developer perhaps you would like to help with the documentation on [docs.smart-mirror.io](http://docs.smart-mirror.io/)? If you are a developer and have a feature/capability you'd like to see, why not spent a couple of hours and help build it? 
+## Contributing
+ Everybody is invited and welcome to contribute to the smart mirror. There is a lot to do... If you are not a developer perhaps you would like to:
+ - **Help with the documentation** on [docs.smart-mirror.io](http://docs.smart-mirror.io/), 
+ - **Localize the smart mirror** in a new language language (or improve an existing one)
+ - **Helping others** on [Discord](https://discord.gg/EMb4ynW).
+ 
+If you are a developer and have a feature/capability you'd like to see, why not spent a couple of hours and help build it? 
 
 The process is straight-forward.
 
@@ -20,6 +18,13 @@ The process is straight-forward.
  - Write the code for your feature/capability.
  - Create a Pull Request against the [**dev**](https://github.com/evancohen/smart-mirror/tree/dev) branch of the smart mirror.
 
+## Development
+ See the `dev` branch for features that are actively in development.
+If you would like to contribute please follow the [contribution guidelines](https://github.com/evancohen/smart-mirror/blob/master/CONTRIBUTING.md).
+To launch the mirror with a debug window attached use the following command:
+```
+npm start dev
+```
 ### Project Structure
  The smart mirror is an [Electron](electron.atom.io) app, which means it leverages Chromium, Node, and the V8 JavaScript engine to host and render the mirror.
 

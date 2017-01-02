@@ -1,13 +1,13 @@
 # First Time Running Smart Mirror
+The smart-mirror is configured using the Remote Configuration Tool. This requires you starting the mirror.
 
- can launch the mirror with
+Open the terminal and type:
 ```
 npm start
 ```
 
-## Errors
-Note that if you start the mirror and get a white screen you most likely have an issue with your config. Often this is caused by a missing comma somewhere within the config. Use of an online javascript linter to help find common syntax errors. 
+If you're running the mirror for the first time (or for the first time since running upgrading to this version of the mirror) you'll see a QR Code with a URL under it. From a phone or another computer (on the same network as your Smart-Mirror) you can open a browser and manually enter the URL. If you're not running the mirror for the first time and you've properly configured the Sound and Voice, say the keyword/hotword and then "Show Remote Link" to display the URL to reach the Remote Configuration Tool.
 
-Have a different issue? Take a look at the [Troubleshooting Page](troubleshooting.md).
+After going to the Home page click on Settings > Configure the Mirror.
 
-Next Step (OPTIONAL): [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)
+Next Step: [Configure the smart-mirror](/docs/configure_the_mirror.md)

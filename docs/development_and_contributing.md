@@ -1,4 +1,8 @@
 # Development and Contributing
+![](/docs/stop.png)
+># `WARNING: This is not complete.`
+#####It will be updated soon :)
+
 
 ##### Development
  See the `dev` branch for features that are actively in development.

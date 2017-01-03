@@ -9,12 +9,12 @@
 Motion Detection requires Johnny-five.io as well as Raspi-io.
 
 make sure you're within the smart-mirror folder.
-```
+```bash
 cd ~/smart-mirror
 ```
 
 from the smart-mirror folder run the following command.
-```
+```bash
 npm install johnny-five && npm install raspi-io
 ```
 

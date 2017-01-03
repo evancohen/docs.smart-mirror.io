@@ -18,4 +18,4 @@ npm run sonus
 ```
 If *that* doesn't work and you've installed all dependencies then the spotter may not be recognizing your voice. You can train the model on your pi on the latest `dev` branch by running `npm run train-model`. More info in #330.
 
-**Still having issues?** Check out [recent audio related issues on GitHub](https://github.com/evancohen/smart-mirror/issues?utf8=%E2%9C%93&q=is%3Aissue%20audio%20-label%3A%22Outdated%20Issue%20-%20Informational%20Only%22%20).
+**Still having issues?** Check out [recent audio related issues on GitHub](https://github.com/evancohen/smart-mirror/issues?utf8=%E2%9C%93&q=is%3Aissue%20audio%20-label%3A%22status%3A%20Outdated%20Issue%20-%20Informational%20Only%22%20).

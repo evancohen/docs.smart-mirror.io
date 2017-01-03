@@ -25,4 +25,4 @@ sudo apt-get install unclutter
 ```
 Then Add `unclutter -idle 0.1 -root` to **/etc/xdg/lxsession/LXDE-pi/autostart** with `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
 
-Next Step: [Configuring Voice Control](configuring_voice.md)
+Next Step: [Configuring Sound](configuring_sound.md)

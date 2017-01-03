@@ -23,4 +23,5 @@
 * [How Tos](docs/how_tos.md)
     * [How To Obtain Chromium Speech Keys](docs/howto/how_to_obtain_chromium_speech_keys.md)
     * [How To Install Raspbian\(full\)](docs/howto/how_to_install_raspbianfull.md)
+    * [Enabling Motion Detection](docs/enabling-motion-detection.md)
 

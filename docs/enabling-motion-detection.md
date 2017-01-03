@@ -1,33 +1,48 @@
-#Enabling efor Motion Detection
+#Enabling for Motion Detection
+
+![](/docs/stop.png)
+># `WARNING: Only compatible with Raspberry Pi`
+#####Do not enable or attempt to install on any thing other than a Smart-Mirror compatible Raspberry Pi Device. 
+
+### Installing Dependencies
+
+Motion Detection requires Johnny-five.io as well as Raspi-io.
+
+make sure you're within the smart-mirror folder.
+```
+cd ~/smart-mirror
+```
+
+from the smart-mirror folder run the following command.
+```
+npm install johnny-five && npm install raspi-io
+```
+
 
 ### Configuration
 
-If you do not have a `config.js` file please enter `cd ~/motion-detect && cp config.example.js config.js` to create the `config.js` file
-If you already have a `config.js` file you must add the following code to the file:
-```
-    // PIR Detection
-    motion : {
-        pin : 26, //Default pirPin is GPIO pin 26.
-        screentimeout : 5.0, //Default timeout is 5 minutes must be a float number.
-        enable : true, // Enable or disable this functionality
-        debug : true // send debug info to dev console, if debug timeout is 30 seconds (not yet working)
-    },
-```
+Use the Motion Settings of the ConfigUI to configure and enable the motion detection after installing dependencies.
 
 Variable | Usage | Data Type | Default Value if not included in config.js
 ---------|-------|-----------|--------------
-pin | Identify GPIO input Pin connected to output pin of the PIR device or other device used to detect motion | int | 26
-screentimeout | Amount of time in minutes before HDMI is turned off after last detected motion | float | 5.0
-enable | enable motion detection | boolean | false
-debug | enable debugging (currently not implemented) | boolean | true
+pin | Identify GPIO input Pin connected to output pin of the PIR device or other device used to detect motion | string | GPIO26
+enabled | enable motion detection | boolean | false
 
-### PIR device used in testing
+### Making it all work
+##### Parts required
 
-https://smile.amazon.com/gp/product/B00FDPO9B8/ref=oh_aui_search_detailpage?ie=UTF8&psc=1
+- [PIR Device](https://smile.amazon.com/gp/product/B00FDPO9B8/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
+- (optional!) LED (color of your choice)
+- (optional!) Resistor (based on draw of LED) 
+
+##### Wiring Diagram with LED
+![figure 1](/assets/Smart-Mirror_Motion_bb_withLED.png)`[figure 1]`
+##### Wiring Diagram without LED
+![figure 2](/assets/Smart-Mirror_Motion_bb.png) `[figure 2]`
 
 ### Basic Functionality
 
-Using a python code to HIGH or LOW on GPIO pin listed in config.js as `pin` variable or default pin 26 if not listed, when motion is not detected for `screentimeout` in minutes the python code will turn of hdmi using `tvservice -o' command. when motion is once again detected the python code uses 2 commands `tvservice -p` followed by `fbset -depth 8 && fbset -depth 16 && xrefresh`; Which powers on the monitor and refreshes the desktop display. 
+Motion detection works with AutoTimer Settings. Using Johnny-Five's motion API the PIR device is connected to a PIN on the Raspberry Pi. Suggested PIN is GPIO 26 as illustrated in figure 1 and figure 2 above. When the `motionstart` event is triggered the `auto-sleep timer` is stopped and will remain stopped until the `motionend` event is triggered. When the `motionend` event is triggered the `auto-sleep timer` is started and set to the `config.autoTimer.autoSleep` interval set in configUI.
 
 ### Issues
 

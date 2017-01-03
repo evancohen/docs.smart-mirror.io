@@ -1,7 +1,7 @@
 # How To Obtain Chromium Speech Keys
 ![](/docs/stop.png)
 ># `WARNING: This is no longer required`
-#####It is being kept here for legacy resons
+#####It is being kept here for legacy reasons
 
 ##Enabling API Libraries
 

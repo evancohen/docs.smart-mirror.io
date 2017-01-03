@@ -15,6 +15,7 @@ If you are a developer and have a feature/capability you'd like to see, why not 
 The process is straight-forward.
 
  - Fork the smart mirror [git repository](https://github.com/evancohen/smart-mirror).
+ - create a branch from the dev branch following the following naming convention `initials/feature-name` for example if Evan Cohen was creating a feature he would name the branch `ec/feature-name`. 
  - Write the code for your feature/capability.
  - Create a Pull Request against the [**dev**](https://github.com/evancohen/smart-mirror/tree/dev) branch of the smart mirror.
 

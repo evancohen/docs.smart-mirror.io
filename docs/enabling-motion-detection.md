@@ -1,4 +1,4 @@
-#Enabling for Motion Detection
+#Enabling Motion Detection
 
 ![](/docs/stop.png)
 ># `WARNING: Only compatible with Raspberry Pi`
@@ -36,9 +36,9 @@ enabled | enable motion detection | boolean | false
 - (optional!) Resistor (based on draw of LED) 
 
 ##### Wiring Diagram with LED
-![figure 1](/assets/Smart-Mirror_Motion_bb_withLED.png)`[figure 1]`
+![figure 1](Smart-Mirror_Motion_bb_withLED.png)`[figure 1]`
 ##### Wiring Diagram without LED
-![figure 2](/assets/Smart-Mirror_Motion_bb.png) `[figure 2]`
+![figure 2](Smart-Mirror_Motion_bb.png) `[figure 2]`
 
 ### Basic Functionality
 
@@ -46,4 +46,4 @@ Motion detection works with AutoTimer Settings. Using Johnny-Five's motion API t
 
 ### Issues
 
-A live chat to get help and discuss mirror related issues: https://gitter.im/evancohen/smart-mirror. Usually there are a few folks hanging around in the lobby, but if there arent you are probubly better off [filing an issue](https://github.com/evancohen/smart-mirror/issues/new). Please tag @justbill2020 on any motion detection issues. 
+A live chat to get help and discuss mirror related issues: [discord chat](https://discord.gg/EMb4ynW). Usually there are a few folks hanging around in the lobby, but if there aren't you are probably better off [filing an issue](https://github.com/evancohen/smart-mirror/issues/new). Please tag @justbill2020 on any motion detection issues. 

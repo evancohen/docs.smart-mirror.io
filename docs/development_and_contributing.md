@@ -10,7 +10,7 @@ You can keep up with development on http://waffle.io/evancohen/smart-mirror
  - **Localize the smart mirror** in a new language language (or improve an existing one)
  - **Helping others** on [Discord](https://discord.gg/EMb4ynW).
  
-If you are a developer and have a feature/capability you'd like to see, why not spent a couple of hours and help build it? 
+If you are a developer and have a feature/capability you'd like to see, why not spend a couple of hours and help build it? 
 
 The process is straight-forward.
 

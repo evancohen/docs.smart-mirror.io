@@ -46,7 +46,7 @@ The plugins directory contains all of the plugins included in the smart mirror. 
 #### [remote/](https://github.com/evancohen/smart-mirror/tree/master/remote)
 The remote directory contains the code that powers the client configuration page(s). The "server" side code can be found in [`remote.js`](https://github.com/evancohen/smart-mirror/blob/master/remote.js).
 
-#### [app/locales/](https://github.com/evancohen/smart-mirror/tree/master/locales)
+#### [app/locales/](https://github.com/evancohen/smart-mirror/tree/master/app/locales)
  Within this directory you will find all the `JSON` localization files for the mirror. The mirror uses [i18n](https://angular-translate.github.io/) to `$translate` strings rendered in the mirror (examples of this in `index.html` and `config.js`).
  
  When making changes to these files make sure that you add string keys to all localization files, not just to the one that you speak.

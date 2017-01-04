@@ -29,6 +29,9 @@ It is **required** that you [train your own personal model for the keyword](#spe
 - [YouTube](#youtube)
 - [SoundCloud](#soundcloud)
 - [Traffic](#traffic)
+- [TV Service](#tvsservice)
+- [AutoTimer](#autotimer)
+- [Motion](#motion)
 - [Fitbit](https://github.com/evancohen/smart-mirror/blob/master/Fitbit-README.md) _(See issue [#350](https://github.com/evancohen/smart-mirror/issues/350) before attempting configuration for fitbit)_
 
 
@@ -122,3 +125,10 @@ If any of your trips aren't showing up it's likely because Bing Maps can't find 
 Now that you've configured everything you're ready to save your configuration by clicking save. This will restart the Smart-Mirror.
 
 Next Step (OPTIONAL): [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)
+
+### TV Shows
+
+### AutoTimer
+
+### Motion
+

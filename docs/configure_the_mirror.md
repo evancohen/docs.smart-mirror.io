@@ -127,8 +127,30 @@ Now that you've configured everything you're ready to save your configuration by
 Next Step (OPTIONAL): [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)
 
 ### TV Shows
+Simply list the TV shows you would like to display on the mirror and the Mirror will display when the next episode airs if the information is known.
 
 ### AutoTimer
+Setting up the mirror to go to sleep is easy. Just enter the mode, wait time (in minutes), if you want the mirror to turn on at the same time everyday enter the autoWake time in 24 hr format.
+
+##### TV Mode
+TV mode will just make the screen go dark... it doesn't actually "power off" this is used on TVs hence being TV mode. Many TVs will show a "no input" message of some sort when using monitor mode. So this makes it work for the people using that type of display device.
+##### Monitor Mode
+Monitor Mode sends a "sleep status" to the screen and stops sending a signal. In most monitors that will have the monitor go into a "sleep mode". If you're getting a "no input" message of some sort. Change the Mode to TV and see how that works.
+>When in monitor mode you must also fill out the commands to go to sleep or to wake the mirror. the default are as follows:
+
+>For "Command used to wake up Smart Mirror"
+
+>```
+sudo ./scripts/raspi-monitor.sh on > /dev/null 2>&1
+```
+
+>For "Command used put Smart Mirror to sleep"
+
+>```
+sudo ./scripts/raspi-monitor.sh off > /dev/null 2>&1
+```
+ 
+
 
 ### Motion
-
+Motion allows you to enable a PIR device on your Raspberry Pi. Please refer to the detailed instructions for [Enabling Motion Detection](/docs/enabling-motion-detection.md).

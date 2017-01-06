@@ -10,16 +10,6 @@ There are two ways to configure audio:
 
 Currently the audio configuration script is not configuring properly.
 We will update this documentation when the script is safe to use again.
-<!--
-Running this script makes configuration easier but you must not enter invalid input. Entering invalid input will make the script fail currently with little to no indication that it has failed. Having said that, if you have a 
-```
-cd ~/smart-mirror
-./scripts/conf-audio.sh
-```
-Now with the remote configuration. We should be able to implement audio configuration via that platform until then, we have the above bash script to help you. If this doesn't work out for you, or you're feeling a bit old school please follow the steps below.
-
-Afterwards, you will need to do [this.](#Final_Configuration_Step_Regardless_of_Scripted_or_Manual_Configuration_Above)
--->
 
 ### Manual Audio input and output Configuration
 If you run into issues configuring your audio see the [Troubleshooting your Microphone and Speech Recognition issues](microphone_and_speech_recognition_issues.md) section. To configure your USB microphone and audio output you'll want to determine your playback and recording devices. 
@@ -55,7 +45,7 @@ card 1: Camera [Vimicro USB2.0 UVC Camera], device 0: USB Audio [USB Audio]
 Here the recording device is card 1, device 0, or `hw1:0`.
 
 
-And finally you'll want to replace the contents of your sound config file with `rm -f ~/.asoundrc && sudo nano /etc/asound.conf`:
+And finally you'll want to replace the contents of your sound config file with `rm -f ~/.asoundrc && nano ~/.asoundrc`:
 
 ``` bash
 pcm.!default {

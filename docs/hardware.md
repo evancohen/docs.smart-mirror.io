@@ -5,7 +5,7 @@ To build a smart-mirror, you will need at least three things:
 - A monitor
 - Something to run the `smart-mirror` application. (Most people use a Raspberry Pi)
 
-In order to use the voice control features of your smart-mirror, you will also need a USB microphone (or USB Webcam w/ microphone).
+In order to use the voice control features of your smart-mirror, you will also need a USB microphone (or USB Webcam w/ microphone). We highly recommend the [PlayStation Eye](http://a.co/ix4JugK). You won't be able to use the webcam on it for anything because the driver is proprietary and it has an IR filter over the lens. However, for about $6 for a usb 4 microphone array with a name that rhymes with Raspberry Pi you can't beat it. Many have disassembled the PS Eye following directions on YouTube, so that it will fit better on their mirror. If you do this get 2, the first one is for practice.
 
 In addition, `smart-mirror` can control a Phillips Hue lighting system.
 

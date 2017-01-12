@@ -9,6 +9,10 @@
 A voice controlled life automation hub, most commonly powered by the Raspberry Pi.
 </p>
 
+> #Join us for a live Q&A on Jan 18 
+### [Discord](http://support.smart-mirror.com) @ 5:30pm PST / 8:30pm EST
+<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=M3V0MmtnaWRramUwcHRoOWk5bjY1bTJvNTggMmRta21saTY0ZHVucjlmaW5obTczNGFwODRAZw&amp;tmsrc=2dmkmli64dunr9finhm734ap84%40group.calendar.google.com"><img border="0" style="height:22px" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+
 # Introduction
 
 This is the official documentation for the [smart-mirror](https://github.com/evancohen/smart-mirror). If you are reading this on [docs.smart-mirror.io](http://docs.smart-mirror.io), great! If not you should head on over.

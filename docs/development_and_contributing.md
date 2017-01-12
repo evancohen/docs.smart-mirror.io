@@ -27,7 +27,7 @@ To launch the mirror with a debug window attached use the following command:
 npm start dev
 ```
 ### Project Structure
- The smart mirror is an [Electron](electron.atom.io) app, which means it leverages Chromium, Node, and the V8 JavaScript engine to host and render the mirror.
+ The smart mirror is an [Electron](http://electron.atom.io) app, which means it leverages Chromium, Node, and the V8 JavaScript engine to host and render the mirror.
 
 #### [app/](https://github.com/evancohen/smart-mirror/tree/master/app)
  The app directory contains the core of the smart-mirror: 

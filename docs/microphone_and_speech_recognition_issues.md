@@ -4,6 +4,7 @@ Most of these issues can be fixed by following the following:
 
 1. Have you [installed all necessary dependencies](install_dependencies.md)?
 2. Is your microphone [configured correctly](configure_the_pi.html#audio-input-and-output)?
+3. Have you enabled billing in [Google Speech Platform](/docs/configuring_voice.md)?
 
 If you've done these and are still having issues I would recommend running `npm start dev` and seeing what (if any) error you get after you say "smart mirror".
 

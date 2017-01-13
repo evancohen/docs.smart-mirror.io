@@ -14,7 +14,7 @@
 * [Running](running.md)
     * [Setting up Smart-Mirror to Run on Boot](setting_up_smart-mirror_to_run_on_boot.md)
     * [Commands Used to Run Smart-Mirror](commands_used_to_run_smart-mirror.md)
-* [Troubleshooting](docs/troubleshooting.md)
+* [Troubleshooting \/ FAQs](docs/troubleshooting.md)
     * [Issues installing electron-prebuilt](docs/npm_install_issues.md)
     * [Microphone and Speech Recognition issues](docs/microphone_and_speech_recognition_issues.md)
 * [Development and Contributing](docs/development_and_contributing.md)

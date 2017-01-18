@@ -19,7 +19,7 @@ When you start Sonus in the terminal, you will see this:
 ```
 $ npm run sonus
 
-> smart-mirror@0.0.9 sonus /home/bmartin/smart-mirror
+> smart-mirror@x.x.x sonus /home/bmartin/smart-mirror
 > node sonus.js
 
 █ 

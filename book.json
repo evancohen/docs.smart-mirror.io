@@ -4,7 +4,8 @@
         "youtube",
         "github",
         "addcssjs",
-        "hide-published-with"
+        "hide-published-with",
+         "copy-code-button"
     ],
     "pluginsConfig": {
         "ga": {

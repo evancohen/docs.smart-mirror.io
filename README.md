@@ -41,7 +41,8 @@ Please file an issue [on GitHub](https://github.com/evancohen/smart-mirror/issue
 #### This project is a step by step process. For successful installation and configuration you must follow it step by step. If you skip a step that seems insignificant it can cause a catastrophic error down the line. Often when troubleshooting in the [discord chat](https://discord.gg/EMb4ynW) we determine that a step was missed. 
 ![](/images/mirrorBoom.jpg)
 #### Having said that we don't mind, nearly everyone on [discord chat](https://discord.gg/EMb4ynW) that has a working install has skipped a step and gone back and fixed it. We're here to help. Following the documentation step by step will greatly reduce your level of frustration while getting started on this project.
-{% endhint}
+{% endhint %}
+
 ##Language Translation
 
 If English isn't your first language, you can translate this site.

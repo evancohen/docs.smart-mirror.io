@@ -1,8 +1,7 @@
 # Development and Contributing
-># `NOTE: This is a work in progress.`
-
-
-You can keep up with development on http://waffle.io/evancohen/smart-mirror
+{% hint style='info' %}
+Info: This is a work in progress.
+{% endhint %}
 
 ## Contributing
  Everybody is invited and welcome to contribute to the smart mirror. There is a lot to do... If you are not a developer perhaps you would like to:

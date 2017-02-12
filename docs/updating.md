@@ -13,7 +13,7 @@ Sometimes new dependencies are added to the mirror or old ones are updated. In t
 npm update
 npm install
 ```
-![](/docs/stop.png)
+![](/images/stop.png)
 ># `WARNING: This is not current.`
 #####It will be updated soon :)
 

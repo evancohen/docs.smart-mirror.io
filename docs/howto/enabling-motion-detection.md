@@ -1,6 +1,6 @@
 #Enabling Motion Detection
 
-![](/docs/stop.png)
+![](/images/stop.png)
 ># `WARNING: Only compatible with Raspberry Pi`
 #####Do not enable or attempt to install on any thing other than a Smart-Mirror compatible Raspberry Pi Device. 
 
@@ -36,9 +36,9 @@ enabled | enable motion detection | boolean | false
 - (optional!) Resistor (based on draw of LED) 
 
 ##### Wiring Diagram with LED
-![figure 1](Smart-Mirror_Motion_bb_withLED.png)`[figure 1]`
+![figure 1](/images/Smart-Mirror_Motion_bb_withLED.png)`[figure 1]`
 ##### Wiring Diagram without LED
-![figure 2](Smart-Mirror_Motion_bb.png) `[figure 2]`
+![figure 2](/images/Smart-Mirror_Motion_bb.png) `[figure 2]`
 
 ### Basic Functionality
 

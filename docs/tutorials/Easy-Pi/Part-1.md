@@ -16,8 +16,8 @@ Make sure to download the **Full desktop image**.
 {% hint style='tip' %}
 To make things easier you can now use NOOBS to install Raspbian Full. Few things regarding this... 
 
-        1. Use NOOBS LITE -- This will require you to be connected to the internet but will also allow you to always install the newest version of Raspbian
-        2. You still must install Raspbian Full. Don't use Raspbian Lite. There's a lot of differences between the two and its a nightmare getting the mirror running on Lite. 
+1. Use NOOBS LITE -- This will require you to be connected to the internet but will also allow you to always install the newest version of Raspbian
+2. You still must install Raspbian Full. Don't use Raspbian Lite. There's a lot of differences between the two and its a nightmare getting the mirror running on Lite. 
 
 [If you would prefer you can also watch the tutorial video here. Which will use the NOOBs LITE install path. ]()
 {% endhint %}

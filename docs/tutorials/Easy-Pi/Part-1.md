@@ -45,6 +45,5 @@ To install Team Viewer click on [this link](https://pages.teamviewer.com/publish
 
 
 <ul class="pager">
-  <li class="previous"><a href="docs/tutorials/Easy-Pi/Part-1.md">Previous</a></li>
-  <li class="next"><a href="docs/tutorials/Easy-Pi/Part-3.md">Next</a></li>
+  <li class="next"><a href="Part-2.html">Next</a></li>
 </ul>

@@ -2,7 +2,7 @@
 
 #####DOWNLOAD THE IMAGE 
   * Official images for Raspbian Jessie are available to download from the Raspberry Pi website [Downloads page.](https://www.raspberrypi.org/downloads/raspbian/) 
-  * Do not use Raspbian Lite or NOOBs to install Raspbian Jessie. This causes unexpected results when installing and configuring your Smart-mirror
+  * Do not use Raspbian Lite. This causes unexpected results when installing and configuring your Smart-mirror
   * After downloading the .zip file, unzip it to get the image file (.img) for writing to your SD card.
 
 #####WRITING AN IMAGE TO THE SD CARD

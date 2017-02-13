@@ -1,6 +1,7 @@
 /* CSS for website */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,600,400,600italic,700,700italic,800,800italic);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
 
 * {   
     font-family: 'Open Sans', sans-serif; 

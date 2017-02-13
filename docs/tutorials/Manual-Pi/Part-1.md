@@ -9,7 +9,7 @@ For instructions on how to install Raspbian see [How To Install Raspbian\(full\)
 
 You'll also need to install Node \(v6.x\) which now comes bundled with npm.
 
-```
+```bash
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```

@@ -5,7 +5,6 @@
         "github",
         "addcssjs",
         "hide-published-with",
-        "copy-code-button",
         "hints"
     ],
     "pluginsConfig": {

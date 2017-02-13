@@ -1,23 +1,10 @@
 # Install Easily on Raspberry Pi 2 or 3
 ### Part 1 - Install Raspbian
 
-{% hint style='info' %}
-this is an info block
-{% endhint %}
-
-{% hint style='warning' %}
-this is an warning block
-{% endhint %}
-
-
 {% hint style='danger' %}
-this is an danger block
+<img src="/images/stop.png" style="style="width:25%;height:25%;">
+This guide is only intended for Raspberry 2 or 3. If you're not using a Raspberry Pi 2 or 3 DO NOT CONTINUE
 {% endhint %}
-
-{% hint style='tip' %}
-this is an tip block
-{% endhint %}
-
 
 {% hint style='tip' %}
 [If you would prefer you can also watch the tutorial video for this step here. Which will use the NOOBs LITE install path. As well as complete any optional steps.]()

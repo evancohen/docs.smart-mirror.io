@@ -5,7 +5,7 @@ This guide is only intended for Raspberry 2 or 3. If you're not using a Raspberr
 ####DO NOT CONTINUE
 
 This is a step by step process. Skipping steps is a really BAD idea. Don't be the guy that doesn't follow the instructions to defuse the bomb.
-![](/images/smart-mirror-defuseBomb.gif)
+![](/assets/smart-mirror-defuseBomb.gif)
 {% endhint %}
 
 {% hint style='tip' %}

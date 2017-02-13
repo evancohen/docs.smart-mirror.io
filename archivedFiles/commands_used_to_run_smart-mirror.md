@@ -10,13 +10,7 @@ npm start
 ```
 npm start dev
 ```
-
 #### Training a Keyword Spotter Model
 ```
 npm run train-model
-```
-
-#### Debugging microphone issues
-```
-npm run microphone-debug
 ```

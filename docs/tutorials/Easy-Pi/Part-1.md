@@ -42,7 +42,75 @@ sudo apt-get upgrade
 We highly recommend installing Team Viewer. With a Team Viewer account you can actually login from anywhere.
 To install Team Viewer click on [this link](https://pages.teamviewer.com/published/raspberrypi/) from within the browser from your Raspbian Install. (This is also covered in the Video Tutorial for this step.)
 
-## Option 2 - TBD
+## Option 2 - Set-Up File Sharing
+You might want to copy files over your network from windows to the Raspberry Pi. Like you might need to copy your keyfile.json file or your keyword personal model file.
+
+To share network folders to a Windows computer we need to install some special software on the Raspberry Pi. The software providing the secret sauce this time is called Samba. The Samba software package implements the SMB protocol and provides support for the Windows naming service (WINS) and for joining a Windows Workgroup.
+
+We can go through how to do this as basics but the steps might be a bit different for your specific network.
+
+### Option 2 Step 1 - Install and configure required software
+
+Installing the software is easy – login to your Raspberry Pi and run:
+```bash
+sudo apt-get install samba samba-common-bin
+```
+
+### Option 2 Step 2 - Install and configure required software
+After installation configure the software by opening the file /etc/samba/smb.conf using the command:
+```bash
+sudo nano /etc/samba/smb.conf
+```
+Read through the file and make sure you have the following parameters set:
+```
+workgroup = WORKGROUP
+wins support = yes
+```
+You can use anything as your workgroup name as long as it is alphanumerical and matches the workgroup you would like to join. The default workgroup in Windows 7 is WORKGROUP.
+
+### Option 2 Step 3 - Setup folder to share
+
+Next step is to create the folder you would like to share. To create a folder called “share” in your home directory do the following:
+```bash
+mkdir ~/share
+```
+
+With the folder created we can now tell the Samba software to share it on the network. Open the file /etc/samba/smb.conf using the command:
+```bash
+sudo nano /etc/samba/smb.conf
+```
+
+Scroll to the bottom and add the following:
+```
+[PiShare]
+ comment=Raspberry Pi Share
+ path=/home/pi/share
+ browseable=Yes
+ writeable=Yes
+ only guest=no
+ create mask=0777
+ directory mask=0777
+ public=no
+```
+Notice how we tell Samba that public access is not allowed via “public=no” – this means that anyone wanting to access the shared folder must login with a valid user.
+
+### Option 2 Step 4 - Set remote user password
+In this case the valid user is the user called “pi”. To let Samba know that “pi” is a network user run the command:
+```bash
+sudo smbpasswd -a pi
+```
+And enter pi’s password twice (default: raspberry).
+
+At this point we can now login to the share from our Windows computer – use Domain: raspberrypi, User: pi and Password: raspberry (unless you changed the password).
+{% hint style='tip' %}
+Login to shared folder on Raspberry Pi
+
+If you do not want to deal with logging in you can always make the share publicly available by changing the config file to say:
+```
+public=yes
+```
+However please note that this is extremely dangerous since anyone will be able to access, modify and delete your files.
+{% endhint %}
 
 
 <ul class="pager">

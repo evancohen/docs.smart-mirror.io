@@ -62,6 +62,6 @@ When we last tested this was not an issue however we're leaving this here in cas
 Once trained, download the model and save it to the root of the smart-mirror directory.
 
 <ul class="pager">
-  <li class="previous"><a href="/docs/tutorials/Easy-Pi/Part-2.md">Previous</a></li>
-  <li class="next"><a href="/docs/tutorials/Easy-Pi/Part-4.md">Next</a></li>
+  <li class="previous"><a href="Part-2.html">Previous</a></li>
+  <li class="next"><a href="Part-4.html">Next</a></li>
 </ul>

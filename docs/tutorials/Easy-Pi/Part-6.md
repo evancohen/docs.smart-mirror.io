@@ -10,11 +10,13 @@ This guide is only intended for Raspberry 2 or 3. If you're not using a Raspberr
 [If you would prefer you can also watch the tutorial video for this step here.](#)
 {% endhint %}
 
-Congratulations! You've completed all the steps!!
+</BR>
+![](http://i.giphy.com/3otPoS81loriI9sO8o.gif)
+#Congratulations! You've completed all the steps!!
 
 Now for some details to assist in running the mirror...
 
-To make the mirror automatically start at boot check out [Part 4 - Final Touches, Option 4 - Start The Mirror on Boot](/docs/tutorials/Easy-Pi/Part-4.md#option-4---start-the-mirror-on-boot).
+To make the mirror automatically start at boot check out [Part 4 - Final Touches, Option 4 - Start The Mirror on Boot](Part-4.md#option-4---start-the-mirror-on-boot).
 
 ## Commands Used to Run Smart-Mirror
 
@@ -33,11 +35,6 @@ npm start dev
 npm run train-model
 ```
 
-
-
-
-
-
 <ul class="pager">
-  <li class="previous"><a href="/docs/tutorials/Easy-Pi/Part-5.md">Previous</a></li>
+  <li class="previous"><a href="Part-5.html">Previous</a></li>
 </ul>

@@ -6,6 +6,8 @@ This guide is only intended for Raspberry 2 or 3. If you're not using a Raspberr
 
 This is a step by step process. Skipping steps is a really BAD idea. Don't be the guy that doesn't follow the instructions to defuse the bomb.
 ![](/images/smart-mirror-defuseBomb.gif)
+
+But do not fear... We're here. We've all been there... Head over to the [discord chat](https://discord.gg/EMb4ynW) and we'll help you get it all straightened out.
 {% endhint %}
 
 {% hint style='tip' %}

@@ -166,10 +166,7 @@ sudo ./scripts/raspi-monitor.sh off > /dev/null 2>&1
 ### Motion
 Motion allows you to enable a PIR device on your Raspberry Pi. Please refer to the detailed instructions for [Enabling Motion Detection](/docs/enabling-motion-detection.md).
 
-
-
-
 <ul class="pager">
-  <li class="previous"><a href="/docs/tutorials/Easy-Pi/Part-4.md">Previous</a></li>
-  <li class="next"><a href="/docs/tutorials/Easy-Pi/Part-6.md">Next</a></li>
+  <li class="previous"><a href="Part-4.html">Previous</a></li>
+  <li class="next"><a href="Part-6.html">Next</a></li>
 </ul>

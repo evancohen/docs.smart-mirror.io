@@ -14,9 +14,9 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-##### Getting the code
+## Step 1 - Getting the Smart-Mirror Application
 
-Next up you'll want to clone this repository into your user's home folder on your Pi:
+Next up you'll want to clone the repository into your user's home folder on your Pi:
 
 ```
 cd ~

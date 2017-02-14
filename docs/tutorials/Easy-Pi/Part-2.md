@@ -25,6 +25,6 @@ curl -sL https://raw.githubusercontent.com/evancohen/smart-mirror/master/scripts
 Once that script finishes running (~15 minutes on a standard connection) you'll continue onto the next step.
 
 <ul class="pager">
-  <li class="previous"><a href="/docs/tutorials/Easy-Pi/Part-1.md">Previous</a></li>
-  <li class="next"><a href="/docs/tutorials/Easy-Pi/Part-3.md">Next</a></li>
+  <li class="previous"><a href="Part-1.html">Previous</a></li>
+  <li class="next"><a href="Part-3.html">Next</a></li>
 </ul>

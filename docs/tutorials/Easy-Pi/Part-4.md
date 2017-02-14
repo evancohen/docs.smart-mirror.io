@@ -141,6 +141,6 @@ Then add the following line to the end:
 When you next reboot the Pi and you should be good to go
 
 <ul class="pager">
-  <li class="previous"><a href="/docs/tutorials/Easy-Pi/Part-3.md">Previous</a></li>
-  <li class="next"><a href="/docs/tutorials/Easy-Pi/Part-5.md">Next</a></li>
+  <li class="previous"><a href="Part-3.html">Previous</a></li>
+  <li class="next"><a href="Part-5.html">Next</a></li>
 </ul>

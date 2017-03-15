@@ -14,7 +14,7 @@ If you want to do it the hard way you will get no additional praise or honor. Bu
 
 [If you would prefer you can also watch the tutorial video for this step here.](#)
 {% endhint %}
-</BR>
+
 ![](http://i.giphy.com/3otPoS81loriI9sO8o.gif)
 #Congratulations! You've completed all the steps!!
 

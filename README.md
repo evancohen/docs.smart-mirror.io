@@ -39,7 +39,7 @@ Please file an issue [on GitHub](https://github.com/evancohen/smart-mirror/issue
 
 {% hint style='tip' %}
 #### This project is a step by step process. For successful installation and configuration you must follow it step by step. If you skip a step that seems insignificant it can cause a catastrophic error down the line. Often when troubleshooting in the [discord chat](https://discord.gg/EMb4ynW) we determine that a step was missed. 
-![](/images/mirrorBoom.jpg)
+![](/images/smart-mirror-defuseBomb.gif)
 #### Having said that we don't mind, nearly everyone on [discord chat](https://discord.gg/EMb4ynW) that has a working install has skipped a step and gone back and fixed it. We're here to help. Following the documentation step by step will greatly reduce your level of frustration while getting started on this project.
 {% endhint %}
 
@@ -55,15 +55,15 @@ new google.translate.TranslateElement({pageLanguage: 'en', layout: google.transl
 ### Supported Platforms
 The smart-mirror is fully compatible with the following operating systems. Note that a small number of features require GPIO, devices without this will not be able to take advantage of these features.
 
-- ![](images/raspbian.png) Raspbian
+- ![](/images/raspbian.png) Raspbian
   - Pi 2
   - Pi 3
-- ![](images/linux.png) Linux (Most major distributions)
-- ![](images/mac.png) OS X >= 10.8
+- ![](/images/linux.png) Linux (Most major distributions)
+- ![](/images/mac.png) OS X >= 10.8
 
 ### Partially supported Platforms
 The smart-mirror is partially compatible with the following operating systems
-- ![](images/windows.png) Windows 7 / Server 2008 R2 or higher
+- ![](/images/windows.png) Windows 7 / Server 2008 R2 or higher
   - Keyword Spotter is not supported. See [snowboy#31](https://github.com/Kitt-AI/snowboy/issues/31).
-- ![](images/cordova.png) iOS and Android (Experimental!)
+- ![](/images/cordova.png) iOS and Android (Experimental!)
   - See the `cordova` branch for details

@@ -21,7 +21,7 @@ The smart mirror uses [Sonus](https://github.com/evancohen/sonus) with Google Cl
 {% hint style='tip' %}
 Google Cloud Platform Console, changes with out notice. This will be updated as we can but this will probably be the trickiest part of this guide. It will require some quick thinking and willingness to ask for help. This is where we shamelessly plug [discord chat](https://discord.gg/JDnHaZH) again. 
 
-Please if you see differences in the console and what's shown here, ask for help in the support section then we can help and update these docs. The contributors don't create new keys often, there's really no need to once the smart-mirror is up and running. We need your feedback and help.
+Please if you see differences in the console and what's shown here, ask for help in the support channel of Discord, then we can help and update these docs. The contributors don't create new keys often, there's really no need to once the smart-mirror is up and running. We need your feedback and help.
 {% endhint %}
 
 1. In the Cloud Platform Console, go to the Projects page and select or create a new project.

@@ -2,6 +2,7 @@
 
 To build a smart-mirror, you will need at least three things: 
 - A two-way mirror
+  - test
 - A monitor
 - Something to run the `smart-mirror` application. (Most people use a Raspberry Pi)
 

@@ -6,7 +6,7 @@
         "addcssjs",
         "hide-published-with",
         "hints",
-        "toggle-chapters"
+        "expandable-chapters"
     ],
     "pluginsConfig": {
         "ga": {

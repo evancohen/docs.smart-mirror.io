@@ -5,7 +5,8 @@
         "github",
         "addcssjs",
         "hide-published-with",
-        "hints"
+        "hints",
+        "toggle-chapters"
     ],
     "pluginsConfig": {
         "ga": {

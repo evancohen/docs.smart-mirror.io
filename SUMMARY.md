@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [test](/docs/test.md)
 * [Hardware](/docs/hardware.md)
 * [Tutorials](/docs/tutorials.md)
   * [Install Easily on Raspberry Pi 2 or 3](/docs/tutorials/install-easily-on-raspberry-pi-2-or-3.md)

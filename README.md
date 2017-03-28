@@ -72,7 +72,7 @@ The smart-mirror is partially compatible with the following operating systems
   
   
   
-  ---
+---
 
 Define a variable `x` equal to 10.
 

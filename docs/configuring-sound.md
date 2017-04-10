@@ -14,28 +14,10 @@ We will update this documentation when the script is safe to use again.
 ### Manual Audio input and output Configuration
 If you run into issues configuring your audio see the [Troubleshooting your Microphone and Speech Recognition issues](microphone_and_speech_recognition_issues.md) section. To configure your USB microphone and audio output you'll want to determine your playback and recording devices. 
 
-First, you'll want to check the available playback devices
-``` bash
-$ aplay -l
- **** List of PLAYBACK Hardware Devices ****
- card 0: ALSA [bcm2835 ALSA], device 0: bcm2835 ALSA [bcm2835 ALSA]
-   Subdevices: 8/8
-   Subdevice #0: subdevice #0
-   Subdevice #1: subdevice #1
-   Subdevice #2: subdevice #2
-   Subdevice #3: subdevice #3
-   Subdevice #4: subdevice #4
-   Subdevice #5: subdevice #5
-   Subdevice #6: subdevice #6
-   Subdevice #7: subdevice #7
- card 0: ALSA [bcm2835 ALSA], device 1: bcm2835 ALSA [bcm2835 IEC958/HDMI]
-   Subdevices: 1/1
-   Subdevice #0: subdevice #0
-```
-Here the playback device is card 0, device 0, or `hw:0,0` (`hw:0,1` is HDMI audio out).
+We no longer need to check the playback device as we will always use `hw:0,0` as the playback device. However, we do need to know the recording device.
 
-Then you'll want to determine the recording device:
-``` bash
+You'll want to determine the recording device:
+```bash
 $ arecord -l
 **** List of CAPTURE Hardware Devices ****
 card 1: Camera [Vimicro USB2.0 UVC Camera], device 0: USB Audio [USB Audio]
@@ -47,12 +29,11 @@ Here the recording device is card 1, device 0, or `hw1:0`.
 
 And finally you'll want to replace the contents of your sound config file with `rm -f ~/.asoundrc && nano ~/.asoundrc`:
 
-``` bash
+```bash
 pcm.!default {
   type asym
    playback.pcm {
      type plug
-     # This is your output device (In this case AUX out on the Pi)
      slave.pcm "hw:0,0"
    }
    capture.pcm {

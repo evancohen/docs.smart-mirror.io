@@ -73,4 +73,4 @@ annyang.trigger("show me a map of Seattle Washington");
 #### Dev Environment
  I typically wouldn't recommend developing directly on the Pi (unless you are trying to debug a Pi specific issue, in which case, I'm sorry. It's not the fastest thing in the world. 
  
- The mirror is compatible with Windows and OSX, and developing there will be much nicer. You can plug your mirror into your computer and use it as a second (or third, you lucky duck) monitor. There's some logic in `main.js` that will automatically put the electron app on to your secondary monitor.
+ The mirror is compatible with linux and OSX, and developing there will be much nicer. You can plug your mirror into your computer and use it as a second (or third, you lucky duck) monitor. There's some logic in `main.js` that will automatically put the electron app on to your secondary monitor. DO NOT Develop on windows, the mirror is incompatible due to limitations of snowboy. However you can use a VM with ubuntu on it if you must... 

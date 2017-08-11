@@ -3,12 +3,12 @@
 To build a smart-mirror, you will need at least three things:
 
 * A two-way mirror
-  * Glass from [Amazon Prime](http://amzn.to/2fyFR5K)
-  * Acrylic from [Tap Plastics](https://tapplastics.com/product/plastics/cut_to_size_plastic/two_way_mirrored_acrylic/558)
+  * Glass: [Smart Mirror Kits \(Amazon\)](http://amzn.to/2wpOPsH)
+  * Acrylic: [Supreme Tech \(Amazon\)](http://amzn.to/2wpP3jq) or [Tap Plastics](https://tapplastics.com/product/plastics/cut_to_size_plastic/two_way_mirrored_acrylic/558)
 * A monitor
 * Something to run the `smart-mirror` application. \(Most people use a Raspberry Pi\)
 
-In order to use the voice control features of your smart-mirror, you will also need a USB microphone \(or USB Webcam w/ microphone\). We highly recommend the [PlayStation Eye](http://a.co/ix4JugK). You won't be able to use the webcam on it for anything because the driver is proprietary and it has an IR filter over the lens. However, for about $6 for a usb 4 microphone array with a name that rhymes with Raspberry Pi you can't beat it. Many have disassembled the PS Eye following directions on YouTube, so that it will fit better on their mirror. If you do this get 2, the first one is for practice.
+In order to use the voice control features of your smart-mirror, you will also need a USB microphone \(or USB Webcam w/ microphone\). We highly recommend the [PlayStation Eye](http://amzn.to/2w5XjCy). You won't be able to use the webcam on it for anything because the driver is proprietary and it has an IR filter over the lens. However, for about $6 for a usb 4 microphone array with a name that rhymes with Raspberry Pi you can't beat it. Many have disassembled the PS Eye following directions on YouTube, so that it will fit better on their mirror. If you do this get 2, the first one is for practice.
 
 In addition, `smart-mirror` can control a Phillips Hue lighting system.
 

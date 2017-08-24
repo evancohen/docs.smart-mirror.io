@@ -3,8 +3,8 @@
 To build a smart-mirror, you will need at least three things:
 
 * A two-way mirror
-  * Glass from Amazon: [Smart Mirror Kits](http://amzn.to/2wpURtn) or [Supreme Tech](http://amzn.to/2wpP3jq)
-  * Acrylic from [Tap Plastics](https://tapplastics.com/product/plastics/cut_to_size_plastic/two_way_mirrored_acrylic/558)
+  * Glass: [Smart Mirror Kits \(Amazon\)](http://amzn.to/2wpOPsH)
+  * Acrylic: [Supreme Tech \(Amazon\)](http://amzn.to/2wpP3jq) or [Tap Plastics](https://tapplastics.com/product/plastics/cut_to_size_plastic/two_way_mirrored_acrylic/558)
 * A monitor
 * Something to run the `smart-mirror` application. \(Most people use a Raspberry Pi\)
 

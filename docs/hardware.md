@@ -27,9 +27,9 @@ Guide contributed by [Joel Hawksley](http://www.hawksley.org)
 | Item | Price \(incl. shipping\) |
 | --- | --- |
 | [Two-Way Acrylic Mirror - 23-9/16" x 13"](http://www.tapplastics.com/product/plastics/cut_to_size_plastic/two_way_mirrored_acrylic/558) | $82.65 |
-| [HP 24uh 24" LED Monitor](https://www.amazon.com/gp/product/B00SFB13UC) | $129.99 |
+| [HP 24uh 24" LED Monitor](http://amzn.to/2wkAH4N) | $129.99 |
 | [Glacier Bay Medicine Cabinet](http://www.homedepot.com/p/Glacier-Bay-15-1-4-in-x-26-in-Surface-Mount-Framed-Mirrored-Swing-Door-Medicine-Cabinet-in-White-S1627-12-B/100576352) | $34.97 |
-| [Keeper 24" Rubber Strap, 2 Pack](https://www.amazon.com/Keeper-06225-EPDM-Rubber-Strap/dp/B001DQDBSS) | $3.96 |
+| [Keeper 24" Rubber Strap, 2 Pack](http://amzn.to/2xH0bJL) | $3.96 |
 | 4 x Eye hooks | $0.25 |
 | Misc. Cut Lumber | $10.00 |
 | Black Electrical Tape | $0.99 |

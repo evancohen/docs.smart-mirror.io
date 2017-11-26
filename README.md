@@ -13,8 +13,9 @@ A voice controlled life automation hub, most commonly powered by the Raspberry P
 
 This is the official documentation for the [smart-mirror](https://github.com/evancohen/smart-mirror), a voice controlled interface that controls your smart devices and displays information from a growing number of services. The smart mirror is powered by:
 - The [Raspberry Pi 3](http://amzn.to/2iU0kRn) 
-- A webcam ([PlayStation Eye](https://www.gitbook.com/book/evancohen/docs-smart-mirror-io/edit#))
-- Observation mirror (aka mirror pane).
+- A webcam ([PlayStation Eye](http://amzn.to/2w5XjCy))
+- Observation mirror (aka mirror pane)
+- Computer monitor
 
 The smart-mirror was originally inspired by [HomeMirror](https://github.com/HannahMitt/HomeMirror) and Michael Teeuw's [Magic Mirror](http://michaelteeuw.nl/tagged/magicmirror). It was originally created in a weekend and is now maintained by a growing community of contributors and enthusiasts. 
 

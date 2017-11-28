@@ -1,6 +1,6 @@
 {
     "plugins": [
-        "ga@git+https://github.com/evancohen/plugin-ga.git#2.0.0",
+        "ga@git+https://github.com/evancohen/plugin-ga.git#1.0.1",
         "youtube",
         "github",
         "addcssjs",

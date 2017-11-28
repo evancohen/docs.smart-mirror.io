@@ -4,7 +4,7 @@
 
 To get started I suggest a clean install of Raspbian. You can snag a fresh copy of Jessie w/ Pixel [Raspbian Download Page](https://www.raspberrypi.org/downloads/raspbian/).
 
-For instructions on how to install Raspbian see \[How To Install Raspbian\(full\)\]\(/docs/howto/how\_to\_install\_raspbianfull.md "How To Install Raspbian\(full\)"\).
+For instructions on how to install Raspbian see \[How To Install Raspbian\(full\)\]\(/docs/howto/how\_to\_install\_raspbianfull.md\).
 
 You'll also need to install Node \(v6.x\) which now comes bundled with npm.
 

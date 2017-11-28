@@ -16,7 +16,8 @@
         },
         "addcssjs": {
             "js": [
-                "docs/lib/custom.js"
+                "//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=a66b014d-faab-49bb-9afd-11a05a61c66e",
+                "js/custom.js"
             ]
         }
     }

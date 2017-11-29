@@ -9,7 +9,10 @@
     "pluginsConfig": {
         "ga": {
             "token": "UA-73330169-1",
-            "configuration": "auto"
+            "configuration": "auto",
+            "outbound": {
+                events: ["click", "auxclick", "contextmenu"]
+            }
         },
         "github": {
             "url": "https://github.com/evancohen/smart-mirror"

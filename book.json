@@ -16,8 +16,8 @@
         },
         "addcssjs": {
             "js": [
-                "//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=a66b014d-faab-49bb-9afd-11a05a61c66e",
-                "//cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"
+                "https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=a66b014d-faab-49bb-9afd-11a05a61c66e",
+                "https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"
             ]
         }
     }

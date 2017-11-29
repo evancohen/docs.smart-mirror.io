@@ -11,7 +11,7 @@
             "token": "UA-73330169-1",
             "configuration": "auto",
             "outbound": {
-                events: ["click", "auxclick", "contextmenu"]
+                "events": ["click", "auxclick", "contextmenu"]
             }
         },
         "github": {

@@ -120,7 +120,7 @@ Optionally you can create groups \(using the API for Philips Hue app\) that you 
 
 ### Calendar
 
-You can have the mirror display your iCal's from Google Calendar, Outlook, iCloud, and more by adding them to the `icals` array.
+You can have the mirror display your iCal's from Google Calendar, Outlook, iCloud, and more by adding them to the `icals` array. Note that these URLs should begin with `http(s)://` and not `ical://`
 
 There are two other properties:
 

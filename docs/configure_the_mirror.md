@@ -113,7 +113,7 @@ You'll need a forecast.io developer key, which you can obtain from: [https://dev
 
 Starting in 2019, the Google Geolocation API used for this feature **requires** an API key. 
 The entry of your Latitude/Longitude location is still **optional** even tho the API key is **required**. 
-See the API Key steps in [Configuring Voice](/configuring_voice.md) 
+See the API Key steps in [Configuring Voice](/docs/configuring_voice.md) 
 
 This API key also is used in the Map feature 
 

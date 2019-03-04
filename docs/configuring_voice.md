@@ -23,6 +23,15 @@ When prompted to create a new service account select "Project Owner"
 
 Keep this information for later. You'll need your projectID and keyfile to [configure the smart mirror](configure_the_mirror.md#speech).
 
+## Setting up your API key
+
+After setting up your **project** you will also need an API key for location and Map mirror functions.
+* from the 3 bar menu on the left, select APIs and Services, then Credentials
+* in the **Create credentials** dropdown, select "API key", 
+* save the value that is shown on the message window that pops up
+
+The API key should be a long string, something like this 'AIzaSyBGWRB2oC1P_UVRZoYeZ0TRV3Kv3aEBPQg'
+
 ## \[Optional\] Train your own Keyword
 
 **Note:** This is no longer required, the mirror comes with a pre-trained universal model! If you're having trouble with the universal model you can follow these steps

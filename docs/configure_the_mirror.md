@@ -50,6 +50,7 @@ Any issues or questions please join us on [discord chat](https://discord.gg/JDnH
 * [Giphy](#giphy)
 * [YouTube](#youtube)
 * [SoundCloud](#soundcloud)
+* [Stock](#stock)
 * [Traffic](#traffic)
 * [TV Service](#tvsservice)
 * [AutoTimer](#autotimer)
@@ -110,7 +111,13 @@ You'll need a forecast.io developer key, which you can obtain from: [https://dev
 
 ### Geolocation
 
-This is an **optional** setting and is only for people who are having issues with the smart-mirror's built in geolocation. You can override your latitude and longitude by entering them here.
+Starting in 2019, the Google Geolocation API used for this feature **requires** an API key. 
+The entry of your Latitude/Longitude location is still **optional** even tho the API key is **required**. 
+See the API Key steps in [Configuring Voice](/docs/configuring_voice.md) 
+
+This API key also is used in the Map feature 
+
+Entering the latitude and longitude is for people who are having issues with the smart-mirror's built in geolocation. You can override your latitude and longitude by entering them here.
 
 ### Hue
 
@@ -136,6 +143,12 @@ If you want to display gifs on your mirror you can do that too! In the [Giphy Be
 You can find instructions for getting YouTube API Keys here: [https://developers.google.com/youtube/v3/getting-started\#before-you-start](https://developers.google.com/youtube/v3/getting-started#before-you-start)
 
 The key will look similiar to this: `vy2u1t34bo123bu41234yduv1234tb`
+
+### Stock
+
+You'll need a AlphaVantage API Key, which you can obtain from: [https://www.alphavantage.co/support/#api-key)
+
+* `API Key` - After selecting from the provided fields, and entering your email address,  you can find your key at the bottom of the page. It should look something like this: `QKQYHF247BBS6Q3V`. Enter this in the `key` field under `Stock Settings, Alpha Vantage API Key` 
 
 ### SoundCloud
 

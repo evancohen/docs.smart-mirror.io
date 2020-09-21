@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Hardware](docs/hardware.md)
 * [Installation](docs/installation.md)
-  * [Install Raspbian](docs/installing_raspbian.md)
+  * [Install Raspberry PI OS](docs/installing_raspbian.md)
   * [Install dependencies](docs/install_dependencies.md)
 * [Configuration](docs/configuration.md)
   * [Configure the Pi](docs/configure_the_pi.md)
@@ -23,6 +23,5 @@
 * [Index](SUMMARY.md)
 * [How Tos](docs/how_tos.md)
   * [How To Obtain Chromium Speech Keys](docs/howto/how_to_obtain_chromium_speech_keys.md)
-  * [How To Install Raspbian\(full\)](docs/howto/how_to_install_raspbianfull.md)
+  * [How To Install Raspberry Pi OS\(full\)](docs/howto/how_to_install_raspbianfull.md)
   * [Enabling Motion Detection](docs/enabling-motion-detection.md)
-

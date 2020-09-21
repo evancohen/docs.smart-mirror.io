@@ -8,7 +8,7 @@ You can keep up with development on [http://waffle.io/evancohen/smart-mirror](ht
 
 Everybody is invited and welcome to contribute to the smart mirror. There is a lot to do... If you are not a developer perhaps you would like to:
 
-* **Help with the documentation** on [docs.smart-mirror.io](http://docs.smart-mirror.io/), 
+* **Help with the documentation** on [docs.smart-mirror.io](http://docs.smart-mirror.io/),
 * **Localize the smart mirror** in a new language language \(or improve an existing one\)
 * **Helping others** on [Discord](https://discord.gg/EMb4ynW).
 
@@ -17,7 +17,7 @@ If you are a developer and have a feature/capability you'd like to see, why not 
 The process is straight-forward.
 
 * Fork the smart mirror [git repository](https://github.com/evancohen/smart-mirror).
-* create a branch from the dev branch following the following naming convention `initials/feature-name` for example if Evan Cohen was creating a feature he would name the branch `ec/feature-name`. 
+* create a branch from the dev branch following the following naming convention `initials/feature-name` for example if Evan Cohen was creating a feature he would name the branch `ec/feature-name`.
 * Write the code for your feature/capability.
 * Create a Pull Request against the [**dev**](https://github.com/evancohen/smart-mirror/tree/dev) branch of the smart mirror.
 
@@ -39,7 +39,7 @@ The smart mirror is an [Electron](http://electron.atom.io) app, which means it l
 
 The app directory contains the core of the smart-mirror:
 
-* `js/` core js of the smart mirror \(bootstrapping angular, etc\) 
+* `js/` core js of the smart mirror \(bootstrapping angular, etc\)
 * `css/` all of the smart mirror styles
 * `locales/` all of the localized speech commands \(more on this later\)
 * `fonts/` nobody knows what this folder does, but it's somehow necessary ;\)
@@ -49,9 +49,13 @@ The app directory contains the core of the smart-mirror:
 The plugins directory contains all of the plugins included in the smart mirror. A plugin consists of an optional combination of the following:
 
 * `config.schema.json` defines the configuration schema for your plugin. You can look at example schema and test your own at [https://smart-mirror.io/playground/](https://smart-mirror.io/playground/)
-* `index.html` the html partial for your plugin. This must be added to the main [index.html](https://github.com/evancohen/smart-mirror/blob/master/index.html) to determine where it will be rendered.
-* `controller.js` All of the angular controller logic \(data binding\) for your plugin. This must be manually included in a script tag in the main [index.html](https://github.com/evancohen/smart-mirror/blob/master/index.html). It is acceptable to write _Node_ here.
-* `service.js` should your plugin need an angular service you can manually included in a script tag in the main [index.html](https://github.com/evancohen/smart-mirror/blob/master/index.html).
+* `index.html` the html partial for your plugin. This will be added to the main [index.html](https://github.com/evancohen/smart-mirror/blob/master/index.html) as part of the new plugin location configuration.
+* `controller.js` All of the angular controller logic \(data binding\) for your plugin. This will be added to the main [index.html](https://github.com/evancohen/smart-mirror/blob/master/index.html) as part of the new plugin location configuration.
+* `service.js` should your plugin need an angular service this will be added to the main [index.html](https://github.com/evancohen/smart-mirror/blob/master/index.html) as part of the new plugin location configuration.
+* `plugin.css` plugin specific classes for styles
+* `locales\*.json` - this folder contains the plugin specific translations required for both configuration )the config.schema.json file and plugin runtime (index.html) , * starting in V 0.28
+
+* a complete sample plugin can be loaded from [here](https://github.com/sdetweil/samplePlugin)
 
 #### [remote/](https://github.com/evancohen/smart-mirror/tree/master/remote)
 
@@ -59,7 +63,7 @@ The remote directory contains the code that powers the client configuration page
 
 #### [app/locales/](https://github.com/evancohen/smart-mirror/tree/master/app/locales)
 
-Within this directory you will find all the `JSON` localization files for the mirror. The mirror uses [i18n](https://angular-translate.github.io/) to `$translate` strings rendered in the mirror \(examples of this in `index.html` and `config.js`\).
+Within this directory you will find the core `JSON` localization files for the mirror. The mirror uses [i18n](https://angular-translate.github.io/) to `$translate` strings rendered in the mirror \(examples of this in `index.html` and `config.json`\).
 
 When making changes to these files make sure that you add string keys to all localization files, not just to the one that you speak.
 
@@ -90,7 +94,11 @@ annyang.trigger("show me a map of Seattle Washington");
 
 I typically wouldn't recommend developing directly on the Pi \(unless you are trying to debug a Pi specific issue, in which case, I'm sorry. It's not the fastest thing in the world.\)
 
-The mirror is compatible with linux and OSX, and developing there will be much nicer. You can plug your mirror into your computer and use it as a second \(or third, you lucky duck\) monitor. There's some logic in `main.js` that will automatically put the electron app on to your secondary monitor. 
+The mirror is compatible with linux and OSX, and developing there will be much nicer. You can plug your mirror into your computer and use it as a second \(or third, you lucky duck\) monitor. There's some logic in `main.js` that will automatically put the electron app on to your secondary monitor.
 
-It us not suggested that you develop on windows, the mirror is incompatible due to limitations of Snowboy. However, you can use a VM with ubuntu on it if you must...
+It is not suggested that you develop on windows, the mirror is incompatible due to limitations of Snowboy. However, you can use a VM with ubuntu on it if you must...
 
+However, if u want to use Windows as a development environment, you can
+you can use the [WinScp](https://winscp.net/eng/index.php) or [bitvise](https://www.bitvise.com/ssh-client) ssh clients to access the PI disk over SSH (make sure to enable it on the pi) and bot tools provide a file manager type view over the PI disk, so you can double click edit with your favorite Windows editor..
+
+For Linux and Mac you can do the same with their file managers or addons.  Like [cyberduck for OSX](https://cyberduck.io/) or caja for linux

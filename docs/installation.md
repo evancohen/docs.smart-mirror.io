@@ -14,8 +14,5 @@ Once that script finishes running \(~15 minutes on a standard connection\) you'l
 
 That's OK. That's why there are manual installation instructions:
 
-* [Install Raspbian](installing_raspbian.md)
+* [Install Raspberry Pi OS](installing_raspbian.md)
 * [Install dependencies and run](install_dependencies.md)
-
-
-

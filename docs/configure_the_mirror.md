@@ -6,6 +6,8 @@ Open the terminal and type:
 
 ```
 npm start
+or
+pm2 start smart-mirror (if you selected yes to use pm2 to manage starting during install)
 ```
 
 There are 2 ways to find the IP and port of the remote for the mirror:
@@ -15,7 +17,7 @@ There are 2 ways to find the IP and port of the remote for the mirror:
 When the mirror starts it will output the remote IP and port to the command line:
 
 ```
-> smart-mirror@0.0.16 start /Users/evan/Git/smart-mirror
+> smart-mirror@0.0.27 start /Users/evan/Git/smart-mirror
 > electron main.js
 
 Remote listening on http://192.168.1.130:8080
@@ -33,7 +35,15 @@ After going to the Home page of the remote, click on Settings &gt; Configure the
 
 It is **required** that you fill out Speech Settings!
 
-See below for links to get service keys and example values for config properties. You will have to obtain keys for Forcast.io, YouTube, SoundCloud. If you're using Fitbit you'll need a key for that as well. If you're using Hue Lights with this project you'll need to know the IP address of your Hue Hub and a username. Please go through this slowly, and thoroughly.
+See below for links to get service keys and example values for config properties. You will have to obtain keys for the following functions
+  Weather,
+  YouTube,
+  SoundCloud,
+  Fitbit,
+  Geolocation,
+  Maps,
+  Spotify
+   If you're using Hue Lights with this project you'll need to know the IP address of your Hue Hub and a username. Please go through this slowly, and thoroughly.
 
 Any issues or questions please join us on [discord chat](https://discord.gg/JDnHaZH).
 
@@ -43,7 +53,7 @@ Any issues or questions please join us on [discord chat](https://discord.gg/JDnH
 * [Speech](#speech)
 * [Layout](#layout)
 * [Greeting](#greeting)
-* [Forecast](#forecast)
+* [weather](#weather)
 * [Geolocation](#geolocation)
 * [Hue](#hue)
 * [Calendar](#calendar)
@@ -76,8 +86,8 @@ For instance `en-US` for English \(United States\), `es-AR` for Spanish \(Argent
 
 The speech config object has the following properties:
 
-* `keyFilename` - The location of your JSON keyfile for 
-* `keyword` - The text of the keyword that you are using to trigger the mirror. This should be "Smart Mirror". Additional Keywords can be entered by clicking the `+` sign.
+* `keyFilename` - The location and name of your JSON keyfile for
+* `hotword` - The text of the hotword that you are using to trigger the mirror. This should be "Smart Mirror". Additional Keywords can be entered by clicking the `+` sign.
 * `model` - The filename for your model \(should not include spaces\). Additional models can be entered by clicking the `+` sign.
 * `sensitivity` - Sensitivity for the keyword spotter. This value is between 0 and 1. If you are getting too many false positives or are having trouble detecting you can change this value.
 
@@ -101,21 +111,32 @@ Select `Randomly All Day` for "How would you like greetings displayed?" and ente
 
 Select `By Time of Day` for "How would you like greetings displayed?" and enter as many greetings as you would like for each time of day \(Morning, Midday, Evening, and Night\) by pressing the `+` sign under each heading. You can also click on a tab to rearrange the order. Lastly you can click the `-` sign to remove the greeting on the bottom.
 
-### Forecast
+### weather
 
-You'll need a forecast.io developer key, which you can obtain from: [https://developer.forecast.io](https://developer.forecast.io)
+You'll need a an API yet
 
-* `API Key` - After Creating an account you can find your key at the bottom of the page. It should look something like this: `vy2u1t34bo123bu41234yduv1234tb`. Enter this in the `key` field under `Forecast.io API Settings` 
-* `Units` - It should be ok to leave the `units` set as auto because the units that are used are determined by your location. If you would like to use other units you can look the [forecast.io documentation](https://developer.forecast.io/docs/v2#options) for more info.
+currently Darksky is no longer giving out free api keys. existing keys will expire sometime near the end of 2021
+
+we have two additional services
+Climacell
+or
+OpenWeather
+
+all services require an api key
+
+* `API Key` - see the links in the `API Key source` dropdown
+* `Units` - It should be ok to leave the `units` set as auto because the units that are used are determined by your location.
+ if u want to force a particular unit setting select one from the dropdown (US or si)
 * `Refresh Interval (minutes)` - This is how often you would like the Weather to update in minutes.
+## note that some services limit the number of calls allowed per day , the dropdown provides some reasonable choices from 5 to 60 minutes
 
 ### Geolocation
 
-Starting in 2019, the Google Geolocation API used for this feature **requires** an API key. 
-The entry of your Latitude/Longitude location is still **optional** even tho the API key is **required**. 
-See the API Key steps in [Configuring Voice](/docs/configuring_voice.md) 
+Starting in 2019, the Google Geolocation API used for this feature **requires** an API key.
+The entry of your Latitude/Longitude location is still **optional** even tho the API key is **required**.
+See the API Key steps in [Configuring Voice](/docs/configuring_voice.md)
 
-This API key also is used in the Map feature 
+This API key also is used in the Map feature
 
 Entering the latitude and longitude is for people who are having issues with the smart-mirror's built in geolocation. You can override your latitude and longitude by entering them here.
 
@@ -148,13 +169,15 @@ The key will look similiar to this: `vy2u1t34bo123bu41234yduv1234tb`
 
 You'll need a AlphaVantage API Key, which you can obtain from: [https://www.alphavantage.co/support/#api-key)
 
-* `API Key` - After selecting from the provided fields, and entering your email address,  you can find your key at the bottom of the page. It should look something like this: `QKQYHF247BBS6Q3V`. Enter this in the `key` field under `Stock Settings, Alpha Vantage API Key` 
+* `API Key` - After selecting from the provided fields, and entering your email address,  you can find your key at the bottom of the page. It should look something like this: `QKQYHF247BBS6Q3V`. Enter this in the `key` field under `Stock Settings, Alpha Vantage API Key`
 
 ### SoundCloud
 
 SoundCloud API keys can be obtained from your app profile \(this requires an account\): [http://soundcloud.com/you/apps](http://soundcloud.com/you/apps)
 
 The key will look similiar to this: `vy2u1t34bo123bu41234yduv1234tb`
+
+### Note: Soundcloud is currently not  granting new api keys (Jan 2020)
 
 ### Traffic
 
@@ -169,8 +192,8 @@ A trip has the following properties:
 * `origin` - The address for the start of your trip
 * `destination` - The address for the destination of your trip
 * `name` - Human readable name for the destination
-* `startTime` - Time to start displaying on Smart Mirror. \(optional: leave blank to always display\) 
-* `endTime` - Time to end displaying on Smart Mirror. \(optional: leave blank to always display\) 
+* `startTime` - Time to start displaying on Smart Mirror. \(optional: leave blank to always display\)
+* `endTime` - Time to end displaying on Smart Mirror. \(optional: leave blank to always display\)
 
 If any of your trips aren't showing up it's likely because Bing Maps can't find the address you specified. Using a full postal address should fix this issue.
 
@@ -212,3 +235,19 @@ Monitor Mode sends a "sleep status" to the screen and stops sending a signal. In
 
 Motion allows you to enable a PIR device on your Raspberry Pi. Please refer to the detailed instructions for [Enabling Motion Detection](/docs/enabling-motion-detection.md).
 
+you can also allow an external service of some sort to signal motion, if you have somethign else.  an Example is the use the linux [Motion project](https://motion-project.github.io/motion_guide.html) to manage alerting to motion from a camera, by selecting External as a choice.
+
+the external service needs to call the provided /home/pi/smart-mirror/scripts/external_motion script with a parameter
+  started - signal motion detected
+  ended   - motion no longer detected
+
+  - ## note that the Motion project signaller runs as root, so the full path to the script above will need to be specified
+
+###  Plugin Location information
+starting  in version 0.27, a new configuration feature allows one to position plugin output in any of the defined locations via dropdown selection,
+and also disable plugin display if not wanted
+
+if new plugins are installed (there are some), the default display location is bottom center, just above the bottom bar info. to place the modules, create a new entry (+) fill in the plugin name (the folder it is in) and select the location where it should be displayed...  then press submit to restart smart-mirror with this layout..  you can change the layout as many times as you wish, by changing the location dropdown for any/some/all plugins and then pressing submit..
+## Note:
+one this to note: if you uncheck the Active checkbox on a currently running plugin, its configuration information will be lost.. and will have to be entered again, it the Active checked is selected in the future..
+### save any info.

@@ -2,8 +2,8 @@
 
 <p align="center">
 <a href="https://discord.gg/EMb4ynW"><img src="https://discordapp.com/api/guilds/258802311298547713/widget.png" alt="Discord Chat"/></a>
-<a href="https://waffle.io/evancohen/smart-mirror"><img src="https://img.shields.io/waffle/label/evancohen/smart-mirror/in%20progress.svg" alt="Stories in progress" /></a>
-<a href='https://dependencyci.com/github/evancohen/smart-mirror'><img src='https://dependencyci.com/github/evancohen/smart-mirror/badge' alt='Dependency Status'/></a>
+<!-- <a href="https://waffle.io/evancohen/smart-mirror"><img src="https://img.shields.io/waffle/label/evancohen/smart-mirror/in%20progress.svg" alt="Stories in progress" /></a>
+<a href='https://dependencyci.com/github/evancohen/smart-mirror'><img src='https://dependencyci.com/github/evancohen/smart-mirror/badge' alt='Dependency Status'/></a> -->
 </p>
 <p align="center">
 A voice controlled life automation hub, most commonly powered by the Raspberry Pi.
@@ -12,12 +12,12 @@ A voice controlled life automation hub, most commonly powered by the Raspberry P
 # Introduction
 
 This is the official documentation for the [smart-mirror](https://github.com/evancohen/smart-mirror), a voice controlled interface that controls your smart devices and displays information from a growing number of services. The smart mirror is powered by:
-- The [Raspberry Pi 3](http://amzn.to/2iU0kRn) 
+- The [Raspberry Pi 3 or 4](http://amzn.to/2iU0kRn)
 - A webcam ([PlayStation Eye](http://amzn.to/2w5XjCy))
 - Observation mirror (aka mirror pane)
 - Computer monitor
 
-The smart-mirror was originally inspired by [HomeMirror](https://github.com/HannahMitt/HomeMirror) and Michael Teeuw's [Magic Mirror](http://michaelteeuw.nl/tagged/magicmirror). It was originally created in a weekend and is now maintained by a growing community of contributors and enthusiasts. 
+The smart-mirror was originally inspired by [HomeMirror](https://github.com/HannahMitt/HomeMirror) and Michael Teeuw's [Magic Mirror](http://michaelteeuw.nl/tagged/magicmirror). It was originally created in a weekend and is now maintained by a growing community of contributors and enthusiasts.
 
 ##### Video Demo: [See it in action](https://youtu.be/PDIbhV8Nvq8)
 {% youtube %}
@@ -34,7 +34,7 @@ Please file any issues or bugs [on GitHub](https://github.com/evancohen/smart-mi
 
 ## About this documentation
 
-This documentation is constantly evolving. It is updated as we find issues and as we add new features. Who is the "we"? We are a community of people contributing, supporting, and improving this project. We are working to make the documentation as helpful, clear, and accurate as possible. 
+This documentation is constantly evolving. It is updated as we find issues and as we add new features. Who is the "we"? We are a community of people contributing, supporting, and improving this project. We are working to make the documentation as helpful, clear, and accurate as possible.
 
 Issues and/or concerns with the documentation?
 Please file an issue [on GitHub](https://github.com/evancohen/smart-mirror/issues/new). Commenting in line can cause readability issues for others. It is also difficult for anyone other than Evan Cohen to address or remove after resolving the documentation.
@@ -53,9 +53,10 @@ new google.translate.TranslateElement({pageLanguage: 'en', layout: google.transl
 ### Supported Platforms
 The smart-mirror is fully compatible with the following operating systems. Note that a small number of features require GPIO, devices without this will not be able to take advantage of these features.
 
-- ![](docs/raspbian.png) Raspbian
+- ![](docs/raspbian.png) Raspberry Pi OS
   - Pi 2
   - Pi 3
+  - Pi 4
 - ![](docs/linux.png) Linux (Most major distributions)
 - ![](docs/mac.png) OS X >= 10.8
 

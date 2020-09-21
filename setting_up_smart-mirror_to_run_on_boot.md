@@ -1,22 +1,9 @@
 # Start the mirror on boot
 
-Optionally, you can configure your Pi to start the mirror on boot. There is a script in the **```/smart-mirror/scripts```** folder called **```bash-start.sh```**. We will copy that file to the **```/home/pi```** folder. 
-```
-cd ~
-cp ./smart-mirror/scripts/bash-start.sh smart-start.sh
-```
+Optionally, you can configure your Pi to start the mirror on boot.
 
-Make the file owned by the user pi
-```
-chown pi:pi /home/pi/smart-start.sh
-chmod +x /home/pi/smart-start.sh
-```
+During install you will be prompted if you want to use the node process manager [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/) to control auto starting your smart-mirror. this process is setup for all platforms and hides any platform specific details.
 
-Then, edit the file **```/home/pi/.config/lxsession/LXDE-pi/autostart```** and add the following line to the end:
-```
-/home/pi/smart-start.sh &
-```
-Reboot the Pi and you should be good to go
-
+after starting your pi, you can use `pm2 help` for additional commands, stop, restart, logs,
 
 Have an issue? Take a look at the [Troubleshooting Page](troubleshooting.md).

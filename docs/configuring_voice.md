@@ -42,7 +42,7 @@ google apis.
 * in the **Create credentials** dropdown, select "API key",
 * save the value that is shown on the message window that pops up
 
-The API key should be a long string, something like this 'AIzaSyBGWRB2oC1P_UVRZoYeZ0TRV3Kv3aEBPQg'
+The API key should be a long string, something like this 'AIzaSyBGWRB2oC1P_xYteMMsdTRV3Kv3aEBPQg'
 
 ## \[Optional\] Train your own Keyword
 

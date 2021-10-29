@@ -38,11 +38,13 @@ It is **required** that you fill out Speech Settings!
 See below for links to get service keys and example values for config properties. You will have to obtain keys for the following functions
   Weather,
   YouTube,
-  SoundCloud,
+  SoundCloud,  not giving out new apikeys
   Fitbit,
   Geolocation,
+  Geocoding
   Maps,
-  Spotify
+  Spotify,
+  Last.FM/Scrobbler
    If you're using Hue Lights with this project you'll need to know the IP address of your Hue Hub and a username. Please go through this slowly, and thoroughly.
 
 Any issues or questions please join us on [discord chat](https://discord.gg/JDnHaZH).
@@ -140,6 +142,10 @@ This API key also is used in the Map feature
 
 Entering the latitude and longitude is for people who are having issues with the smart-mirror's built in geolocation. You can override your latitude and longitude by entering them here.
 
+### Geocoding
+starting is 2021, the service we used for locating which country you were in for weather units has stopped running,
+google provides a similar service, but needs an api enabled , add this to the apikey used for geolocation above, this API is **required**.
+
 ### Hue
 
 You'll need two things to set up your Philips Hue configuration, an `ip` and a `username`. You can find the instructions for this on the Philips Hue Documentation site in the [Getting Started](http://www.developers.meethue.com/documentation/getting-started) section \(unfortunately you need to create an account to view this info\).
@@ -204,6 +210,10 @@ Next Step \(OPTIONAL\): [Setting up Smart-Mirror to Run on Boot](setting_up_smar
 ### TV Shows
 
 Simply list the TV shows you would like to display on the mirror and the Mirror will display when the next episode airs if the information is known.
+
+### Last.FM  (the plugin is called scrobbler from the name Last.FM defines as the collector)
+
+this plugin requires an apikey from your Last.FM logon, see https://www.last.fm/api#getting-started
 
 ### AutoTimer
 

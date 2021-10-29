@@ -25,9 +25,21 @@ Keep this information for later. You'll need your projectID and keyfile to [conf
 
 ## Setting up your API key
 
-After setting up your **project** you will also need an API key for location and Map mirror functions.
+After setting up your **project** you will also need an API key for
+* geolocation
+* geocoding
+* Javascript Static Map
+* youtube (if you intend to use this function on your mirror)
+
+google apis.
+
+#### from the 3 bar menu on the left, select APIs and Services, then Library
+ enter part of the name of each api in turn, and select it, and click enable
+    repeat for the other apis listed
+ after completing the enabling for all the listed apis
+
 * from the 3 bar menu on the left, select APIs and Services, then Credentials
-* in the **Create credentials** dropdown, select "API key", 
+* in the **Create credentials** dropdown, select "API key",
 * save the value that is shown on the message window that pops up
 
 The API key should be a long string, something like this 'AIzaSyBGWRB2oC1P_UVRZoYeZ0TRV3Kv3aEBPQg'
@@ -39,14 +51,10 @@ The API key should be a long string, something like this 'AIzaSyBGWRB2oC1P_UVRZo
 Training your own keyword will drastically increase the accuracy of keyword detection. This will be most accurate if you do this on your Pi using the microphone that you'll be using to trigger the mirror.
 
 **From the smart mirror directory run:**
+###  as of Mid 2019 local model training no longer works  see
 
-```
-npm run train-model
-```
-
-**Or, you can train your model here:** [https://snowboy.kitt.ai/hotword/47](https://snowboy.kitt.ai/hotword/47)
+**you can train your model here:** [https://github.com/seasalt-ai/snowboy]https://github.com/seasalt-ai/snowboy)
 
 Once trained, download the model and save it to the root of the smart-mirror directory.
 
 Next Step: [Run The Mirror For the First Time](/first_time_running_smart_mirror.md)
-
